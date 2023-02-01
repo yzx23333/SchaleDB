@@ -1,0 +1,6 @@
+version: "1"
+rules:
+  - base: main
+    upstream: lonqie:main
+    mergeMethod: merge
+    mergeUnstable: true
