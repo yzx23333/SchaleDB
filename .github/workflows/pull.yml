@@ -1,0 +1,28 @@
+name: AutoPull
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT }}
+
+      - name: timezone
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
+      - name: Sync upstream updates
+        run: |
+          git config pull.rebase false
+          git config --global user.name 'yzx23333'
+          git config --global user.email 'yzx23333@pm.me'
+          export oldver=$(git rev-parse --short HEAD)
+          git pull https://github.com/lonqie/SchaleDB
+          if [ $(git rev-parse --short HEAD) != $oldver ]; then
+            git commit --amend --no-edit -m "Auto Merge $(date '+%Y-%m-%d %H:%M:%S')"
+            git push origin test
+          fi
