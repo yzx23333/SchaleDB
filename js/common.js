@@ -56,7 +56,7 @@ if (localStorage.getItem("language") && languages.includes(localStorage.getItem(
             break;
         case 'zh':
             if (browserLang.toLowerCase().startsWith('zh-cn')) {
-                userLang = 'Cn'
+                userLang = 'Zh'
             } else {
                 userLang = 'Tw'
             }
