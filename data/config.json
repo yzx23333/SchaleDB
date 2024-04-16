@@ -99,7 +99,7 @@
             ]
         }
     ],
-    "build": 1712060879,
+    "build": 1713261088,
     "Regions": [
         {
             "Name": "Jp",
@@ -187,30 +187,38 @@
             "CurrentGacha": [
                 {
                     "characters": [
-                        20035,
-                        10090,
-                        10034,
-                        10014
+                        10049,
+                        10068,
+                        10029
                     ],
-                    "start": 1711504800,
-                    "end": 1712800800
-                }
-            ],
-            "CurrentEvents": [
+                    "start": 1712800800,
+                    "end": 1713319200
+                },
                 {
-                    "event": 835,
-                    "start": 1711504800,
-                    "end": 1712800800
+                    "characters": [
+                        10062,
+                        20024,
+                        10063
+                    ],
+                    "start": 1713319200,
+                    "end": 1713924000
                 }
             ],
+            "CurrentEvents": [],
             "CurrentRaid": [
                 {
-                    "type": "Raid",
-                    "raid": 6,
+                    "type": "TimeAttack",
+                    "raid": 26000,
+                    "start": 1712800800,
+                    "end": 1713294000
+                },
+                {
+                    "type": "EliminateRaid",
+                    "raid": 9,
                     "terrain": "Indoor",
-                    "season": 68,
-                    "start": 1712109600,
-                    "end": 1712775600
+                    "season": 12,
+                    "start": 1713319200,
+                    "end": 1713898800
                 }
             ]
         },
@@ -230,7 +238,7 @@
                 20
             ],
             "PotentialMax": 0,
-            "CampaignMax": 23,
+            "CampaignMax": 24,
             "CampaignExtra": true,
             "Events": [
                 701,
@@ -293,23 +301,24 @@
             "CurrentGacha": [
                 {
                     "characters": [
-                        10077,
-                        10078,
-                        20008,
-                        10006
+                        20031,
+                        20009,
+                        10030,
+                        20010
                     ],
-                    "start": 1712023200,
-                    "end": 1713232800
+                    "start": 1713232800,
+                    "end": 1713837600
                 }
             ],
-            "CurrentEvents": [
+            "CurrentEvents": [],
+            "CurrentRaid": [
                 {
-                    "event": 830,
-                    "start": 1712023200,
-                    "end": 1713232800
+                    "type": "TimeAttack",
+                    "raid": 20000,
+                    "start": 1713232800,
+                    "end": 1713812400
                 }
-            ],
-            "CurrentRaid": []
+            ]
         },
         {
             "Name": "Cn",
@@ -327,7 +336,7 @@
                 25
             ],
             "PotentialMax": 0,
-            "CampaignMax": 17,
+            "CampaignMax": 18,
             "CampaignExtra": false,
             "Events": [
                 701,
@@ -354,34 +363,29 @@
             "BloodMax": 10,
             "FindGiftMax": 10,
             "SchoolDungeonMax": 3,
-            "FurnitureSetMax": 106,
+            "FurnitureSetMax": 107,
             "FurnitureTemplateMax": 0,
             "CurrentGacha": [
                 {
                     "characters": [
-                        10026,
-                        10027,
-                        10028
+                        10038,
+                        20014,
+                        10039,
+                        20018
                     ],
-                    "start": 1711000800,
-                    "end": 1712210400
+                    "start": 1712210400,
+                    "end": 1713420000
                 }
             ],
-            "CurrentEvents": [
-                {
-                    "event": 806,
-                    "start": 1711000800,
-                    "end": 1712210400
-                }
-            ],
+            "CurrentEvents": [],
             "CurrentRaid": [
                 {
                     "type": "Raid",
-                    "raid": 7,
-                    "terrain": "Street",
-                    "season": 18,
-                    "start": 1712210400,
-                    "end": 1712779200
+                    "raid": 6,
+                    "terrain": "Indoor",
+                    "season": 20,
+                    "start": 1713420000,
+                    "end": 1713988800
                 }
             ]
         }

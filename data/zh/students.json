@@ -49642,7 +49642,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 90,
         "PathName": "Miyako",
@@ -50081,7 +50081,7 @@
         "MemoryLobby": [
             6,
             6,
-            0
+            6
         ],
         "MemoryLobbyBGM": "Future Lab",
         "FurnitureInteraction": [
@@ -50097,7 +50097,12 @@
                     0
                 ]
             ],
-            []
+            [
+                [
+                    8105,
+                    0
+                ]
+            ]
         ],
         "FavorItemTags": [
             "as",
@@ -50287,7 +50292,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 91,
         "PathName": "Saki",
@@ -50661,7 +50666,7 @@
         "MemoryLobby": [
             5,
             5,
-            0
+            5
         ],
         "MemoryLobbyBGM": "Koi is Love",
         "FurnitureInteraction": [
@@ -50677,7 +50682,12 @@
                     0
                 ]
             ],
-            []
+            [
+                [
+                    8104,
+                    0
+                ]
+            ]
         ],
         "FavorItemTags": [
             "as",
@@ -50836,7 +50846,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 92,
         "PathName": "Miyu",
@@ -51165,7 +51175,7 @@
         "MemoryLobby": [
             5,
             5,
-            0
+            5
         ],
         "MemoryLobbyBGM": "Cotton Candy Island",
         "FurnitureInteraction": [
@@ -51181,7 +51191,12 @@
                     0
                 ]
             ],
-            []
+            [
+                [
+                    8103,
+                    0
+                ]
+            ]
         ],
         "FavorItemTags": [
             "as",
@@ -60070,7 +60085,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 108,
         "PathName": "Moe",
@@ -60448,7 +60463,7 @@
         "MemoryLobby": [
             6,
             6,
-            0
+            6
         ],
         "MemoryLobbyBGM": "Midnight Trip",
         "FurnitureInteraction": [
@@ -60464,7 +60479,12 @@
                     0
                 ]
             ],
-            []
+            [
+                [
+                    8106,
+                    0
+                ]
+            ]
         ],
         "FavorItemTags": [
             "aL",
@@ -88791,7 +88811,7 @@
         "Id": 20031,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "DefaultOrder": 158,
@@ -88832,7 +88852,7 @@
         "Illustrator": "ミミトケ",
         "Designer": "ミミトケ",
         "CharHeightMetric": "156cm",
-        "CharHeightImperial": null,
+        "CharHeightImperial": "5'1\"",
         "StabilityPoint": 1040,
         "AttackPower1": 252,
         "AttackPower100": 2521,
@@ -89101,7 +89121,7 @@
         ],
         "MemoryLobby": [
             5,
-            0,
+            5,
             0
         ],
         "MemoryLobbyBGM": "Fruitful Blossom",
@@ -89112,7 +89132,12 @@
                     3
                 ]
             ],
-            [],
+            [
+                [
+                    6301,
+                    3
+                ]
+            ],
             []
         ],
         "FavorItemTags": [
