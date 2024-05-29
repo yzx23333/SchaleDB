@@ -203,7 +203,7 @@
         "Interaction": [
             true,
             true,
-            false
+            true
         ]
     },
     {
@@ -9215,7 +9215,7 @@
         "Category": "Decorations",
         "Size": [
             3,
-            3
+            4
         ],
         "Tags": [
             "Dm",
@@ -13304,7 +13304,7 @@
         "Icon": "my_gamedevdept_01_sofa_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -13563,7 +13563,7 @@
         "Icon": "my_gamedevdept_01_monitor_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -15458,14 +15458,14 @@
         "Id": 14100,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_accstand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15501,14 +15501,14 @@
         "Id": 14101,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_bagstand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15544,14 +15544,14 @@
         "Id": 14102,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_bench_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15588,14 +15588,14 @@
         "Id": 14103,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_bench_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15631,14 +15631,14 @@
         "Id": 14104,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_basketstand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15674,14 +15674,14 @@
         "Id": 14105,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_bookstand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15717,14 +15717,14 @@
         "Id": 14106,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_cabinet_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15760,14 +15760,14 @@
         "Id": 14107,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_carpet_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15803,14 +15803,14 @@
         "Id": 14108,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_carpet_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15846,14 +15846,14 @@
         "Id": 14109,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_carpet_03",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15889,14 +15889,14 @@
         "Id": 14110,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_carpet_04",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15932,14 +15932,14 @@
         "Id": 14111,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_chair_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -15975,14 +15975,14 @@
         "Id": 14112,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_cutout_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16018,14 +16018,14 @@
         "Id": 14113,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_fence_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16061,14 +16061,14 @@
         "Id": 14114,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_light_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16104,14 +16104,14 @@
         "Id": 14115,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_partition_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16147,14 +16147,14 @@
         "Id": 14116,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_partition_03",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16190,14 +16190,14 @@
         "Id": 14117,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_plantsofa_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16233,14 +16233,14 @@
         "Id": 14118,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_spotlight_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16276,14 +16276,14 @@
         "Id": 14119,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_table_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16319,14 +16319,14 @@
         "Id": 14120,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_wallacc_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16362,14 +16362,14 @@
         "Id": 14121,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
         "Icon": "my_shoppingmall_01_wallacc_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -16405,14 +16405,14 @@
         "Id": 14200,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_bookstand_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16448,14 +16448,14 @@
         "Id": 14201,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_chair_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16491,14 +16491,14 @@
         "Id": 14202,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_clothesrack_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16534,14 +16534,14 @@
         "Id": 14203,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_fittingroom_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16577,14 +16577,14 @@
         "Id": 14204,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_fruitstand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16620,14 +16620,14 @@
         "Id": 14205,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_garden_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16663,14 +16663,14 @@
         "Id": 14206,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_kiosk_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16706,14 +16706,14 @@
         "Id": 14207,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_partition_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16749,14 +16749,14 @@
         "Id": 14208,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_perfumestand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16792,14 +16792,14 @@
         "Id": 14209,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_showcase_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16835,14 +16835,14 @@
         "Id": 14210,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_showcase_02",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16878,14 +16878,14 @@
         "Id": 14211,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_wardrobe_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16921,14 +16921,14 @@
         "Id": 14212,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_showcase_03",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -16964,14 +16964,14 @@
         "Id": 14213,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_toyshelf_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -17007,14 +17007,14 @@
         "Id": 14214,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_tile",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -17050,14 +17050,14 @@
         "Id": 14215,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "my_shoppingmall_01_wall_right_1x2",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -17093,14 +17093,14 @@
         "Id": 14216,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
         "Icon": "shoppingmallbg",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 120,
@@ -17136,14 +17136,14 @@
         "Id": 14300,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_shoppingmall_01_ballpool_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -17179,14 +17179,14 @@
         "Id": 14301,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_shoppingmall_01_counter_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -17222,14 +17222,14 @@
         "Id": 14302,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_shoppingmall_01_cushionstand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -17265,14 +17265,14 @@
         "Id": 14303,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_shoppingmall_01_showwindow_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -17308,14 +17308,14 @@
         "Id": 14304,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_shoppingmall_01_vegetablestand_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -17351,14 +17351,14 @@
         "Id": 14305,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_shoppingmall_01_vendingmachine_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -17394,14 +17394,14 @@
         "Id": 14306,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_shoppingmall_01_window_01",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -22983,7 +22983,7 @@
         "Id": 101020,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "N",
@@ -23019,7 +23019,7 @@
         "Id": 101021,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "R",
@@ -23055,7 +23055,7 @@
         "Id": 101022,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SR",
@@ -23091,7 +23091,7 @@
         "Id": 101023,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
@@ -23439,7 +23439,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "Rarity": "SSR",
         "Icon": "my_event08_atsukochair",
@@ -23463,6 +23463,7 @@
         ],
         "ShiftingCraftQuality": 200,
         "ShiftingCraftQualityGlobal": 0,
+        "ShiftingCraftQualityCn": 0,
         "SubCategory": "Chair",
         "SetGroupId": 0,
         "Name": "ロイヤルダイヤチェア",
@@ -23470,7 +23471,7 @@
         "Interaction": [
             true,
             true,
-            false
+            true
         ]
     },
     {
@@ -24102,7 +24103,7 @@
         "Icon": "my_event21_plantshelf",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -24142,7 +24143,7 @@
         "Icon": "my_event21_shelf",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -24181,7 +24182,7 @@
         "Icon": "my_event22_locker",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -24220,7 +24221,7 @@
         "Icon": "my_event22_stool",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 50,
@@ -24259,7 +24260,7 @@
         "Icon": "my_event22_sofa",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -24298,7 +24299,7 @@
         "Icon": "my_event22_cabinet",
         "Craftable": [
             true,
-            false,
+            true,
             false
         ],
         "ComfortBonus": 350,
@@ -24951,13 +24952,13 @@
         "Id": 210321,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_event061_table",
         "Craftable": [
-            false,
+            true,
             false,
             false
         ],
@@ -24971,16 +24972,18 @@
             "Dn",
             "A",
             "dT",
+            "cx",
             "FP"
         ],
         "ShiftingCraftQuality": 200,
+        "ShiftingCraftQualityGlobal": 0,
         "SubCategory": "Table",
         "SetGroupId": 0,
         "Name": "折り紙テーブル",
         "Desc": "心に癒やしをもたらす古風な折り紙用のテーブル。お嬢様の密やかな趣味の場。",
         "Interaction": [
             true,
-            false,
+            true,
             false
         ]
     },
@@ -24988,13 +24991,13 @@
         "Id": 210322,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_event061_goods_display",
         "Craftable": [
-            false,
+            true,
             false,
             false
         ],
@@ -25008,16 +25011,18 @@
             "Dn",
             "A",
             "dT",
+            "cx",
             "Fn"
         ],
         "ShiftingCraftQuality": 200,
+        "ShiftingCraftQualityGlobal": 0,
         "SubCategory": "Prop",
         "SetGroupId": 0,
         "Name": "モモフレンズのグッズ台",
         "Desc": "モモフレンズのグッズがずらりと並ぶ台。誰もがその可愛さに惹かれて見入ってしまう。",
         "Interaction": [
             true,
-            false,
+            true,
             false
         ]
     },
@@ -25025,13 +25030,13 @@
         "Id": 210323,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_event061_market_table",
         "Craftable": [
-            false,
+            true,
             false,
             false
         ],
@@ -25045,16 +25050,18 @@
             "Dn",
             "A",
             "dT",
+            "cx",
             "FO"
         ],
         "ShiftingCraftQuality": 200,
+        "ShiftingCraftQualityGlobal": 0,
         "SubCategory": "Table",
         "SetGroupId": 0,
         "Name": "フレッシュショップテーブル",
         "Desc": "清潔感と自然の融合！フレッシュなショップテーブル。フレッシュフルーツで一服いかが？",
         "Interaction": [
             true,
-            false,
+            true,
             false
         ]
     },
@@ -25062,13 +25069,13 @@
         "Id": 210324,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
         "Icon": "my_event061_tarrot_showcase",
         "Craftable": [
-            false,
+            true,
             false,
             false
         ],
@@ -25082,16 +25089,18 @@
             "Dn",
             "A",
             "dT",
+            "cx",
             "Fo"
         ],
         "ShiftingCraftQuality": 200,
+        "ShiftingCraftQualityGlobal": 0,
         "SubCategory": "Table",
         "SetGroupId": 0,
         "Name": "タロットテーブル",
         "Desc": "運命のカードをいざ！一度は引いてみたくなるタロットテーブル。",
         "Interaction": [
             true,
-            false,
+            true,
             false
         ]
     },
@@ -25099,7 +25108,7 @@
         "Id": 210325,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
@@ -25122,13 +25131,14 @@
             "FS"
         ],
         "ShiftingCraftQuality": 200,
+        "ShiftingCraftQualityGlobal": 0,
         "SubCategory": "HomeAppliance",
         "SetGroupId": 0,
         "Name": "古風な調理台",
         "Desc": "温かいスープから焼き物まで！どんな料理にも対応できる古風な調理台！",
         "Interaction": [
             true,
-            false,
+            true,
             false
         ]
     },
@@ -25136,7 +25146,7 @@
         "Id": 210326,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "Rarity": "SSR",
@@ -25159,13 +25169,14 @@
             "FT"
         ],
         "ShiftingCraftQuality": 200,
+        "ShiftingCraftQualityGlobal": 0,
         "SubCategory": "Chair",
         "SetGroupId": 0,
         "Name": "リラックスチェア",
         "Desc": "一人だけの空間を作ってくれる休憩用椅子。インドア派にはうってつけだ。",
         "Interaction": [
             true,
-            false,
+            true,
             false
         ]
     },
@@ -25615,6 +25626,43 @@
         ]
     },
     {
+        "Id": 210339,
+        "IsReleased": [
+            true,
+            false,
+            false
+        ],
+        "Rarity": "SSR",
+        "Icon": "my_event067_selfphotobooth",
+        "Craftable": [
+            true,
+            false,
+            false
+        ],
+        "ComfortBonus": 350,
+        "Category": "Furnitures",
+        "Size": [
+            2,
+            2
+        ],
+        "Tags": [
+            "Dn",
+            "A",
+            "dT",
+            "GA"
+        ],
+        "ShiftingCraftQuality": 200,
+        "SubCategory": "Prop",
+        "SetGroupId": 0,
+        "Name": "セルフィーブース",
+        "Desc": "盛りの生徒たちの目を引くセルフィーブース。たくさんのデコレーションが用意されている。",
+        "Interaction": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
         "Id": 210340,
         "IsReleased": [
             true,
@@ -25644,6 +25692,80 @@
         "SetGroupId": 0,
         "Name": "伝説の記録板",
         "Desc": "ある伝説的なバンドの記録が書かれたホワイトボード。名声やスイーツよりも大切なのは、一緒に過ごした思い出だ。",
+        "Interaction": [
+            false,
+            false,
+            false
+        ]
+    },
+    {
+        "Id": 210341,
+        "IsReleased": [
+            true,
+            false,
+            false
+        ],
+        "Rarity": "SSR",
+        "Icon": "my_event068_sleepingcafebed",
+        "Craftable": [
+            false,
+            false,
+            false
+        ],
+        "ComfortBonus": 350,
+        "Category": "Furnitures",
+        "Size": [
+            4,
+            3
+        ],
+        "Tags": [
+            "Dn",
+            "A",
+            "dT",
+            "Gb",
+            "Gc"
+        ],
+        "ShiftingCraftQuality": 200,
+        "SubCategory": "Bed",
+        "SetGroupId": 0,
+        "Name": "カフェ用ベッド",
+        "Desc": "メイドにとっても、ゲーマーにとってもベッドは大事だ。いや、むしろ必須だと言える……という主張とともに持ち込まれた家具。場所と状況が合うかどうかは、後で考えるとのこと。",
+        "Interaction": [
+            true,
+            false,
+            false
+        ]
+    },
+    {
+        "Id": 210342,
+        "IsReleased": [
+            true,
+            false,
+            false
+        ],
+        "Rarity": "SSR",
+        "Icon": "my_event068_bbqgrill",
+        "Craftable": [
+            true,
+            false,
+            false
+        ],
+        "ComfortBonus": 350,
+        "Category": "Furnitures",
+        "Size": [
+            2,
+            3
+        ],
+        "Tags": [
+            "Dn",
+            "A",
+            "dT"
+        ],
+        "ShiftingCraftQuality": 200,
+        "SubCategory": "Prop",
+        "SetGroupId": 0,
+        "Name": "バーベキューグリル",
+        "Desc": "バーベキュー材料を焼くことができるグリルセット。火を使用するため、取り扱いの際は十分に気をつけよう。",
         "Interaction": [
             false,
             false,

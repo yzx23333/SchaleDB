@@ -7406,7 +7406,7 @@
         "Gear": {
             "Released": [
                 true,
-                false,
+                true,
                 false
             ],
             "StatType": [
@@ -27169,7 +27169,9 @@
                 25
             ]
         ],
-        "FavorAlts": [],
+        "FavorAlts": [
+            10095
+        ],
         "MemoryLobby": [
             6,
             6,
@@ -27744,7 +27746,9 @@
                 30
             ]
         ],
-        "FavorAlts": [],
+        "FavorAlts": [
+            10094
+        ],
         "MemoryLobby": [
             6,
             6,
@@ -30239,7 +30243,7 @@
             {
                 "SkillType": "gearnormal",
                 "Name": "变～硬～吧♪＋",
-                "Desc": "每20秒，令1名生命值百分比最低的我方单位<b:DEF>增加<?1>(持续13秒)；\n令该目标回复治愈力<?2>的生命值.",
+                "Desc": "每20秒，令<b>2</b>名生命值百分比最低的我方单位<b:DEF>增加<?1>(持续13秒)；\n令该目标回复治愈力<?2>的生命值.",
                 "Parameters": [
                     [
                         "29%",
@@ -30509,7 +30513,7 @@
         "Gear": {
             "Released": [
                 true,
-                false,
+                true,
                 false
             ],
             "StatType": [
@@ -34990,7 +34994,7 @@
         "Gear": {
             "Released": [
                 true,
-                false,
+                true,
                 false
             ],
             "StatType": [
@@ -40269,7 +40273,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 73,
         "PathName": "Hatsune_Miku",
@@ -40632,7 +40636,7 @@
         "MemoryLobby": [
             6,
             6,
-            0
+            6
         ],
         "MemoryLobbyBGM": "Blue New World",
         "FurnitureInteraction": [
@@ -50238,7 +50242,7 @@
         "Gear": {
             "Released": [
                 true,
-                false,
+                true,
                 false
             ],
             "StatType": [
@@ -53806,7 +53810,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 97,
         "PathName": "Misaki",
@@ -54344,7 +54348,7 @@
         "MemoryLobby": [
             5,
             5,
-            0
+            5
         ],
         "MemoryLobbyBGM": "Alkaline Tears",
         "FurnitureInteraction": [
@@ -54549,7 +54553,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 98,
         "PathName": "Hiyori",
@@ -54926,7 +54930,7 @@
         "MemoryLobby": [
             5,
             5,
-            0
+            5
         ],
         "MemoryLobbyBGM": "Guruguru Usagi",
         "FurnitureInteraction": [
@@ -54942,7 +54946,12 @@
                     0
                 ]
             ],
-            []
+            [
+                [
+                    5,
+                    0
+                ]
+            ]
         ],
         "FavorItemTags": [
             "am"
@@ -55099,7 +55108,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 99,
         "PathName": "Atsuko",
@@ -55442,7 +55451,7 @@
         "MemoryLobby": [
             5,
             5,
-            0
+            5
         ],
         "MemoryLobbyBGM": "Midnight Trip",
         "FurnitureInteraction": [
@@ -55458,7 +55467,12 @@
                     0
                 ]
             ],
-            []
+            [
+                [
+                    205301,
+                    0
+                ]
+            ]
         ],
         "FavorItemTags": [
             "Ba"
@@ -59793,7 +59807,7 @@
         "IsReleased": [
             true,
             true,
-            false
+            true
         ],
         "DefaultOrder": 107,
         "PathName": "Saori",
@@ -60209,7 +60223,7 @@
         "MemoryLobby": [
             5,
             5,
-            0
+            5
         ],
         "MemoryLobbyBGM": "Alkaline Tears",
         "FurnitureInteraction": [
@@ -63268,6 +63282,13 @@
                 "Effects": [
                     {
                         "Type": "BuffAlly",
+                        "Restrictions": [
+                            {
+                                "Property": "Id",
+                                "Operand": "NotEqual",
+                                "Value": 16010
+                            }
+                        ],
                         "Value": [
                             [
                                 1552,
@@ -63284,6 +63305,25 @@
                         ],
                         "Stat": "AttackPower_Coefficient",
                         "Channel": 102
+                    },
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                1552,
+                                1591,
+                                1629,
+                                1784,
+                                1823,
+                                1862,
+                                2017,
+                                2056,
+                                2095,
+                                2250
+                            ]
+                        ],
+                        "Stat": "AttackPower_Coefficient",
+                        "Channel": 2
                     }
                 ]
             },
@@ -77198,6 +77238,121 @@
                 ]
             },
             {
+                "SkillType": "gearnormal",
+                "Name": "精心保养＋",
+                "Desc": "自身每进行15次普通攻击，令自身<b:EnhanceMysticRate>、加算<?1>、<b:ATK>增加<?2>、<b:CriticalChance>增加<?3>(持续<?4>).",
+                "Parameters": [
+                    [
+                        "23.3%",
+                        "24.4%",
+                        "25.6%",
+                        "28.9%",
+                        "30%",
+                        "31.2%",
+                        "37.3%",
+                        "38.4%",
+                        "39.6%",
+                        "40.9%"
+                    ],
+                    [
+                        "20.6%",
+                        "21.6%",
+                        "22.7%",
+                        "28%",
+                        "29.1%",
+                        "30.1%",
+                        "33%",
+                        "34%",
+                        "35%",
+                        "35.9%"
+                    ],
+                    [
+                        "12.5%",
+                        "13.1%",
+                        "13.7%",
+                        "17%",
+                        "17.6%",
+                        "18.2%",
+                        "20%",
+                        "20.6%",
+                        "21.2%",
+                        "22.5%"
+                    ],
+                    [
+                        "30秒",
+                        "30秒",
+                        "30秒",
+                        "30秒",
+                        "30秒",
+                        "30秒",
+                        "30秒",
+                        "30秒",
+                        "30秒",
+                        "40秒"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_BULLETTYPEBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                2331,
+                                2448,
+                                2565,
+                                2891,
+                                3008,
+                                3125,
+                                3730,
+                                3847,
+                                3964,
+                                4095
+                            ]
+                        ],
+                        "Stat": "EnhanceMysticRate_Base",
+                        "Channel": 34
+                    },
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                2064,
+                                2167,
+                                2270,
+                                2806,
+                                2910,
+                                3013,
+                                3302,
+                                3405,
+                                3507,
+                                3598
+                            ]
+                        ],
+                        "Stat": "AttackPower_Coefficient",
+                        "Channel": 2
+                    },
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                1251,
+                                1314,
+                                1376,
+                                1701,
+                                1764,
+                                1826,
+                                2001,
+                                2064,
+                                2126,
+                                2255
+                            ]
+                        ],
+                        "Stat": "CriticalPoint_Coefficient",
+                        "Channel": 9
+                    }
+                ]
+            },
+            {
                 "SkillType": "passive",
                 "Name": "这是职业加成！",
                 "Desc": "<b:CriticalDamage>增加<?1>.",
@@ -77405,7 +77560,38 @@
             "HealPower100": 0,
             "StatLevelUpType": "Standard"
         },
-        "Gear": {},
+        "Gear": {
+            "Released": [
+                true,
+                false,
+                false
+            ],
+            "StatType": [
+                "CriticalPoint_Base"
+            ],
+            "StatValue": [
+                [
+                    260,
+                    260
+                ]
+            ],
+            "Name": "女仆的发圈",
+            "Desc": "拖把、女仆装和发圈，构成「女仆勇者」的三大特征其一……据说是这样。而这发圈是爱丽丝认为其中最重要的装备。",
+            "TierUpMaterial": [
+                [
+                    5025,
+                    130,
+                    131
+                ]
+            ],
+            "TierUpMaterialAmount": [
+                [
+                    4,
+                    80,
+                    25
+                ]
+            ]
+        },
         "SkillExMaterial": [
             [
                 3050,
@@ -89709,7 +89895,7 @@
         "Id": 10079,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "DefaultOrder": 159,
@@ -89730,7 +89916,7 @@
         "IndoorBattleAdaptation": 2,
         "WeaponType": "AR",
         "WeaponImg": "weapon_icon_ch9998",
-        "Cover": false,
+        "Cover": true,
         "Equipment": [
             "Gloves",
             "Hairpin",
@@ -89750,7 +89936,7 @@
         "Illustrator": "ミミトケ",
         "Designer": "-",
         "CharHeightMetric": "161cm",
-        "CharHeightImperial": null,
+        "CharHeightImperial": "5'3\"",
         "StabilityPoint": 1336,
         "AttackPower1": 235,
         "AttackPower100": 2358,
@@ -90105,7 +90291,7 @@
         "FavorAlts": [],
         "MemoryLobby": [
             5,
-            0,
+            5,
             0
         ],
         "MemoryLobbyBGM": "Guruguru Usagi",
@@ -90116,7 +90302,12 @@
                     0
                 ]
             ],
-            [],
+            [
+                [
+                    210322,
+                    0
+                ]
+            ],
             []
         ],
         "FavorItemTags": [],
@@ -90296,7 +90487,7 @@
         "Id": 10080,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "DefaultOrder": 160,
@@ -90317,7 +90508,7 @@
         "IndoorBattleAdaptation": 1,
         "WeaponType": "HG",
         "WeaponImg": "weapon_icon_ch9997",
-        "Cover": false,
+        "Cover": true,
         "Equipment": [
             "Shoes",
             "Hairpin",
@@ -90337,7 +90528,7 @@
         "Illustrator": "ミミトケ",
         "Designer": "-",
         "CharHeightMetric": "-",
-        "CharHeightImperial": null,
+        "CharHeightImperial": "-",
         "StabilityPoint": 908,
         "AttackPower1": 213,
         "AttackPower100": 2139,
@@ -90686,7 +90877,7 @@
         "FavorAlts": [],
         "MemoryLobby": [
             5,
-            0,
+            5,
             0
         ],
         "MemoryLobbyBGM": "Poppin' Memories",
@@ -90697,7 +90888,12 @@
                     0
                 ]
             ],
-            [],
+            [
+                [
+                    210323,
+                    0
+                ]
+            ],
             []
         ],
         "FavorItemTags": [],
@@ -90877,7 +91073,7 @@
         "Id": 26011,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "DefaultOrder": 161,
@@ -90918,7 +91114,7 @@
         "Illustrator": "ミミトケ",
         "Designer": "-",
         "CharHeightMetric": "160cm",
-        "CharHeightImperial": null,
+        "CharHeightImperial": "5'2\"",
         "StabilityPoint": 1582,
         "AttackPower1": 233,
         "AttackPower100": 2339,
@@ -91190,7 +91386,7 @@
         "FavorAlts": [],
         "MemoryLobby": [
             5,
-            0,
+            5,
             0
         ],
         "MemoryLobbyBGM": "Irasshaimase",
@@ -91201,7 +91397,12 @@
                     0
                 ]
             ],
-            [],
+            [
+                [
+                    210324,
+                    0
+                ]
+            ],
             []
         ],
         "FavorItemTags": [],
@@ -91381,7 +91582,7 @@
         "Id": 10081,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "DefaultOrder": 162,
@@ -91422,7 +91623,7 @@
         "Illustrator": "Mx2J",
         "Designer": "Mx2J",
         "CharHeightMetric": "155cm",
-        "CharHeightImperial": null,
+        "CharHeightImperial": "155 cm",
         "StabilityPoint": 1988,
         "AttackPower1": 328,
         "AttackPower100": 3284,
@@ -91805,7 +92006,7 @@
         "FavorAlts": [],
         "MemoryLobby": [
             6,
-            0,
+            6,
             0
         ],
         "MemoryLobbyBGM": "Hue",
@@ -91816,7 +92017,12 @@
                     0
                 ]
             ],
-            [],
+            [
+                [
+                    210321,
+                    0
+                ]
+            ],
             []
         ],
         "FavorItemTags": [
@@ -91976,7 +92182,7 @@
         "Id": 10082,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "DefaultOrder": 163,
@@ -92017,7 +92223,7 @@
         "Illustrator": "Mx2J",
         "Designer": "Mx2J",
         "CharHeightMetric": "157cm",
-        "CharHeightImperial": null,
+        "CharHeightImperial": "157 cm",
         "StabilityPoint": 1976,
         "AttackPower1": 311,
         "AttackPower100": 3117,
@@ -92341,7 +92547,7 @@
         "FavorAlts": [],
         "MemoryLobby": [
             6,
-            0,
+            6,
             0
         ],
         "MemoryLobbyBGM": "Koi is Love",
@@ -92352,7 +92558,12 @@
                     0
                 ]
             ],
-            [],
+            [
+                [
+                    210325,
+                    0
+                ]
+            ],
             []
         ],
         "FavorItemTags": [
@@ -92514,7 +92725,7 @@
         "Id": 10083,
         "IsReleased": [
             true,
-            false,
+            true,
             false
         ],
         "DefaultOrder": 164,
@@ -92555,7 +92766,7 @@
         "Illustrator": "Mx2J",
         "Designer": "Mx2J",
         "CharHeightMetric": "160cm",
-        "CharHeightImperial": null,
+        "CharHeightImperial": "5'2\"",
         "StabilityPoint": 1892,
         "AttackPower1": 248,
         "AttackPower100": 2483,
@@ -92959,7 +93170,7 @@
         "FavorAlts": [],
         "MemoryLobby": [
             6,
-            0,
+            6,
             0
         ],
         "MemoryLobbyBGM": "Aira",
@@ -92970,7 +93181,12 @@
                     0
                 ]
             ],
-            [],
+            [
+                [
+                    210326,
+                    0
+                ]
+            ],
             []
         ],
         "FavorItemTags": [
@@ -93643,7 +93859,7 @@
             false
         ],
         "DefaultOrder": 166,
-        "PathName": "Kotama_Camping",
+        "PathName": "Kotama_Camp",
         "DevName": "CH0232",
         "Name": "小玉（露营）",
         "School": "Millennium",
@@ -93802,7 +94018,7 @@
                 "Icon": "COMMON_SKILLICON_WEAPONBUFF",
                 "Effects": [
                     {
-                        "Type": "BuffAlly",
+                        "Type": "BuffSelf",
                         "Value": [
                             [
                                 598,
@@ -93819,6 +94035,32 @@
                         ],
                         "Stat": "AttackPower_Coefficient",
                         "Channel": 2
+                    },
+                    {
+                        "Type": "BuffAlly",
+                        "Restrictions": [
+                            {
+                                "Property": "Id",
+                                "Operand": "NotEqual",
+                                "Value": 10084
+                            }
+                        ],
+                        "Value": [
+                            [
+                                598,
+                                627,
+                                657,
+                                776,
+                                806,
+                                836,
+                                955,
+                                985,
+                                1015,
+                                1134
+                            ]
+                        ],
+                        "Stat": "AttackPower_Coefficient",
+                        "Channel": 102
                     }
                 ]
             },
@@ -94162,7 +94404,7 @@
             false
         ],
         "DefaultOrder": 167,
-        "PathName": "Hare_Camping",
+        "PathName": "Hare_Camp",
         "DevName": "CH0233",
         "Name": "晴（露营）",
         "School": "Millennium",
@@ -101570,6 +101812,1535 @@
             [
                 12,
                 7,
+                13
+            ]
+        ]
+    },
+    {
+        "Id": 10093,
+        "IsReleased": [
+            true,
+            false,
+            false
+        ],
+        "DefaultOrder": 180,
+        "PathName": "Kirara",
+        "DevName": "kirara",
+        "Name": "绮罗罗",
+        "School": "Gehenna",
+        "Club": "ShinySparkleSociety",
+        "StarGrade": 3,
+        "SquadType": "Main",
+        "TacticRole": "DamageDealer",
+        "Summons": [],
+        "Position": "Middle",
+        "BulletType": "Sonic",
+        "ArmorType": "LightArmor",
+        "StreetBattleAdaptation": 4,
+        "OutdoorBattleAdaptation": 2,
+        "IndoorBattleAdaptation": 0,
+        "WeaponType": "AR",
+        "WeaponImg": "weapon_icon_kirara",
+        "Cover": true,
+        "Equipment": [
+            "Gloves",
+            "Badge",
+            "Watch"
+        ],
+        "CollectionBG": "BG_Gehenna_Collection",
+        "FamilyName": "夜樱",
+        "PersonalName": "绮罗罗",
+        "SchoolYear": "2年级",
+        "CharacterAge": "16岁",
+        "Birthday": "2月24日",
+        "CharacterSSRNew": "今天又有什么激动人心的事在等着我呢～？",
+        "ProfileIntroduction": "格黑娜学园所属，性格开朗的女高中生。\n\n一直期待着发生新奇和激动人心之事的少女。交际能力强到与初次见面的人都能像认识许久的老朋友一样聊天。",
+        "Hobby": "聊天",
+        "CharacterVoice": "山下七海",
+        "BirthDay": "2/24",
+        "Illustrator": "Mx2J",
+        "Designer": "桧野ひなこ",
+        "CharHeightMetric": "159cm",
+        "CharHeightImperial": null,
+        "StabilityPoint": 1320,
+        "AttackPower1": 256,
+        "AttackPower100": 2566,
+        "MaxHP1": 2124,
+        "MaxHP100": 21240,
+        "DefensePower1": 18,
+        "DefensePower100": 113,
+        "HealPower1": 1477,
+        "HealPower100": 4433,
+        "DodgePoint": 755,
+        "AccuracyPoint": 738,
+        "CriticalPoint": 263,
+        "CriticalDamageRate": 20000,
+        "AmmoCount": 15,
+        "AmmoCost": 3,
+        "Range": 650,
+        "RegenCost": 700,
+        "Skills": [
+            {
+                "SkillType": "autoattack",
+                "Effects": [
+                    {
+                        "Type": "DMGSingle",
+                        "Hits": [
+                            10000
+                        ],
+                        "Scale": [
+                            10000
+                        ],
+                        "Frames": {
+                            "AttackEnterDuration": 0,
+                            "AttackStartDuration": 0,
+                            "AttackEndDuration": 0,
+                            "AttackBurstRoundOverDelay": 0,
+                            "AttackIngDuration": 0,
+                            "AttackReloadDuration": 0
+                        },
+                        "CriticalCheck": "Check"
+                    }
+                ]
+            },
+            {
+                "SkillType": "ex",
+                "Name": "格黑娜的名人！",
+                "Desc": "令自身<s:FormChange>强化，普通攻击时造成自身攻击力<?1>的追加伤害，令自身<b:ATK>增加<?2>(持续40秒).\n立即换弹.",
+                "Parameters": [
+                    [
+                        "15.2%",
+                        "17.5%",
+                        "22%",
+                        "24.3%",
+                        "28.9%"
+                    ],
+                    [
+                        "39.6%",
+                        "39.6%",
+                        "45.5%",
+                        "45.5%",
+                        "51.4%"
+                    ]
+                ],
+                "Cost": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "Icon": "COMMON_SKILLICON_FORMCHANGE",
+                "Effects": [
+                    {
+                        "Type": "DMGEcho",
+                        "CriticalCheck": "Check",
+                        "Scale": [
+                            1522,
+                            1755,
+                            2206,
+                            2432,
+                            2890
+                        ]
+                    },
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                3960,
+                                3960,
+                                4554,
+                                4554,
+                                5148
+                            ]
+                        ],
+                        "Stat": "AttackPower_Coefficient",
+                        "Channel": 2
+                    }
+                ]
+            },
+            {
+                "SkillType": "normal",
+                "Name": "总是闪闪亮亮！",
+                "Desc": "每30秒，对1名敌方单位造成自身攻击力<?1>的伤害.",
+                "Parameters": [
+                    [
+                        "391%",
+                        "411%",
+                        "430%",
+                        "509%",
+                        "528%",
+                        "548%",
+                        "626%",
+                        "646%",
+                        "665%",
+                        "744%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_TARGET",
+                "Effects": [
+                    {
+                        "Type": "DMGSingle",
+                        "CriticalCheck": "Check",
+                        "Scale": [
+                            39172,
+                            41136,
+                            43092,
+                            50925,
+                            52881,
+                            54845,
+                            62678,
+                            64634,
+                            66590,
+                            74423
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "passive",
+                "Name": "可丽饼的甜蜜",
+                "Desc": "<b:CriticalDamage>增加<?1>.",
+                "Parameters": [
+                    [
+                        "14%",
+                        "14.7%",
+                        "15.4%",
+                        "18.2%",
+                        "18.9%",
+                        "19.6%",
+                        "22.4%",
+                        "23.1%",
+                        "23.8%",
+                        "26.6%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Stat": "CriticalDamageRate_Coefficient",
+                        "Scale": [
+                            1400,
+                            1470,
+                            1540,
+                            1820,
+                            1890,
+                            1960,
+                            2240,
+                            2310,
+                            2380,
+                            2660
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "weaponpassive",
+                "Name": "可丽饼的甜蜜＋",
+                "Desc": "<b:CriticalDamage>增加<?1>；\n<b:CriticalDamage>增加<?2>.",
+                "Parameters": [
+                    [
+                        "2000",
+                        "2100",
+                        "2200",
+                        "2600",
+                        "2700",
+                        "2800",
+                        "3200",
+                        "3300",
+                        "3400",
+                        "3800"
+                    ],
+                    [
+                        "14%",
+                        "14.7%",
+                        "15.4%",
+                        "18.2%",
+                        "18.9%",
+                        "19.6%",
+                        "22.4%",
+                        "23.1%",
+                        "23.8%",
+                        "26.6%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Stat": "CriticalDamageRate_Base",
+                        "Scale": [
+                            2000,
+                            2100,
+                            2200,
+                            2600,
+                            2700,
+                            2800,
+                            3200,
+                            3300,
+                            3400,
+                            3800
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "sub",
+                "Name": "心动☆的感觉？",
+                "Desc": "自身在拥有<s:FormChange>强化状态时，<b:HIT>增加<?1>，无视每<?2>普通攻击间的开火间隔",
+                "Parameters": [
+                    [
+                        "16.1%",
+                        "16.9%",
+                        "17.7%",
+                        "20.9%",
+                        "21.7%",
+                        "22.5%",
+                        "25.8%",
+                        "26.6%",
+                        "27.4%",
+                        "30.6%"
+                    ],
+                    [
+                        "2次",
+                        "2次",
+                        "2次",
+                        "2次",
+                        "2次",
+                        "2次",
+                        "2次",
+                        "2次",
+                        "2次",
+                        "4次"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_IGNOREDELAY",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                1613,
+                                1694,
+                                1775,
+                                2098,
+                                2178,
+                                2259,
+                                2581,
+                                2662,
+                                2742,
+                                3065
+                            ]
+                        ],
+                        "Stat": "AccuracyPoint_Coefficient",
+                        "Channel": 5
+                    }
+                ]
+            }
+        ],
+        "FavorStatType": [
+            "AttackPower",
+            "MaxHP"
+        ],
+        "FavorStatValue": [
+            [
+                3,
+                0
+            ],
+            [
+                4,
+                0
+            ],
+            [
+                5,
+                53
+            ],
+            [
+                6,
+                64
+            ],
+            [
+                2,
+                11
+            ],
+            [
+                2,
+                16
+            ],
+            [
+                4,
+                26
+            ]
+        ],
+        "FavorAlts": [],
+        "MemoryLobby": [
+            5,
+            0,
+            0
+        ],
+        "MemoryLobbyBGM": "Theme 210",
+        "FurnitureInteraction": [
+            [
+                [
+                    210339,
+                    0
+                ]
+            ],
+            [],
+            []
+        ],
+        "FavorItemTags": [
+            "Bb",
+            "aS",
+            "an"
+        ],
+        "FavorItemUniqueTags": [
+            "GA",
+            "Ga"
+        ],
+        "IsLimited": 0,
+        "Weapon": {
+            "Name": "巧克力&草莓",
+            "Desc": "绮罗罗总是随身携带的枪。\n\n以绮罗罗本人的喜好进行了装饰，比起枪械而言看起来更像是一种时尚道具。据说枪名来源于绮罗罗最喜欢的一种可丽饼。",
+            "AdaptationType": "Street",
+            "AdaptationValue": 1,
+            "AttackPower1": 113,
+            "AttackPower100": 1127,
+            "MaxHP1": 611,
+            "MaxHP100": 6108,
+            "HealPower1": 0,
+            "HealPower100": 0,
+            "StatLevelUpType": "Standard"
+        },
+        "Gear": {},
+        "SkillExMaterial": [
+            [
+                3030,
+                250
+            ],
+            [
+                3031,
+                3030,
+                251,
+                270
+            ],
+            [
+                3032,
+                3031,
+                252,
+                271
+            ],
+            [
+                3033,
+                3032,
+                253,
+                272
+            ]
+        ],
+        "SkillExMaterialAmount": [
+            [
+                12,
+                15
+            ],
+            [
+                12,
+                18,
+                16,
+                31
+            ],
+            [
+                12,
+                18,
+                12,
+                25
+            ],
+            [
+                8,
+                18,
+                3,
+                22
+            ]
+        ],
+        "SkillMaterial": [
+            [
+                4030
+            ],
+            [
+                4030
+            ],
+            [
+                4031,
+                4030,
+                250
+            ],
+            [
+                4031,
+                251,
+                270
+            ],
+            [
+                4032,
+                4031,
+                251,
+                270
+            ],
+            [
+                4032,
+                252,
+                271
+            ],
+            [
+                4033,
+                4032,
+                253,
+                272
+            ],
+            [
+                4033,
+                253,
+                272
+            ]
+        ],
+        "SkillMaterialAmount": [
+            [
+                5
+            ],
+            [
+                8
+            ],
+            [
+                5,
+                12,
+                6
+            ],
+            [
+                8,
+                5,
+                13
+            ],
+            [
+                5,
+                12,
+                11,
+                17
+            ],
+            [
+                8,
+                4,
+                16
+            ],
+            [
+                8,
+                12,
+                2,
+                9
+            ],
+            [
+                12,
+                5,
+                12
+            ]
+        ]
+    },
+    {
+        "Id": 10094,
+        "IsReleased": [
+            true,
+            false,
+            false
+        ],
+        "DefaultOrder": 181,
+        "PathName": "Momoi_Maid",
+        "DevName": "CH0201",
+        "Name": "桃井（女仆）",
+        "School": "Millennium",
+        "Club": "GameDev",
+        "StarGrade": 3,
+        "SquadType": "Main",
+        "TacticRole": "DamageDealer",
+        "Summons": [],
+        "Position": "Middle",
+        "BulletType": "Sonic",
+        "ArmorType": "LightArmor",
+        "StreetBattleAdaptation": 0,
+        "OutdoorBattleAdaptation": 4,
+        "IndoorBattleAdaptation": 2,
+        "WeaponType": "AR",
+        "WeaponImg": "weapon_icon_13011",
+        "Cover": true,
+        "Equipment": [
+            "Hat",
+            "Hairpin",
+            "Watch"
+        ],
+        "CollectionBG": "BG_OldHouseOutside_Collection",
+        "FamilyName": "才羽",
+        "PersonalName": "桃井",
+        "SchoolYear": "1年级",
+        "CharacterAge": "15岁",
+        "Birthday": "12月8日",
+        "CharacterSSRNew": "最棒的女仆，在此登场！老师，先来打游戏吧！",
+        "ProfileIntroduction": "千年科学学园所属，「游戏开发部」的游戏编剧。\n\n因意想不到的事而被误认为C&C特工，换上了女仆装，甚至还被迫卷入事件当中。但她会以自身独有的开朗而自信的姿态直面逆境。",
+        "Hobby": "游戏",
+        "CharacterVoice": "德井青空",
+        "BirthDay": "12/8",
+        "Illustrator": "kokosando",
+        "Designer": "kokosando",
+        "CharHeightMetric": "143cm",
+        "CharHeightImperial": null,
+        "StabilityPoint": 1384,
+        "AttackPower1": 211,
+        "AttackPower100": 2111,
+        "MaxHP1": 2226,
+        "MaxHP100": 22270,
+        "DefensePower1": 19,
+        "DefensePower100": 118,
+        "HealPower1": 1414,
+        "HealPower100": 4242,
+        "DodgePoint": 791,
+        "AccuracyPoint": 707,
+        "CriticalPoint": 202,
+        "CriticalDamageRate": 20000,
+        "AmmoCount": 15,
+        "AmmoCost": 3,
+        "Range": 650,
+        "RegenCost": 700,
+        "Skills": [
+            {
+                "SkillType": "autoattack",
+                "Effects": [
+                    {
+                        "Type": "DMGSingle",
+                        "Hits": [
+                            10000
+                        ],
+                        "Scale": [
+                            10000
+                        ],
+                        "Frames": {
+                            "AttackEnterDuration": 0,
+                            "AttackStartDuration": 0,
+                            "AttackEndDuration": 0,
+                            "AttackBurstRoundOverDelay": 0,
+                            "AttackIngDuration": 0,
+                            "AttackReloadDuration": 0
+                        },
+                        "CriticalCheck": "Check"
+                    }
+                ]
+            },
+            {
+                "SkillType": "ex",
+                "Name": "虚拟女仆武器！",
+                "Desc": "立即换弹；\n自身进行<s:FormChange>时，对目标造成自身攻击力<?1>的追加伤害，\n<b:AttackSpeed>增加<?2>，\n无视100次普通攻击间的开火间隔(换弹1次后失效).",
+                "Parameters": [
+                    [
+                        "29.5%",
+                        "33.9%",
+                        "42.8%",
+                        "47.2%",
+                        "56%"
+                    ],
+                    [
+                        "53.2%",
+                        "61.2%",
+                        "69.2%",
+                        "77.1%",
+                        "85.1%"
+                    ]
+                ],
+                "Cost": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "Icon": "COMMON_SKILLICON_FORMCHANGE",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                5323,
+                                6121,
+                                6920,
+                                7718,
+                                8517
+                            ]
+                        ],
+                        "Stat": "AttackSpeed_Coefficient",
+                        "Channel": 24
+                    },
+                    {
+                        "Type": "DMGEcho",
+                        "CriticalCheck": "Check",
+                        "Scale": [
+                            2952,
+                            3399,
+                            4283,
+                            4721,
+                            5605
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "normal",
+                "Name": "只要结果好的话就都没问题！",
+                "Desc": "每50秒，对1名敌方单位造成自身攻击力<?1>的伤害.",
+                "Parameters": [
+                    [
+                        "414%",
+                        "435%",
+                        "456%",
+                        "539%",
+                        "560%",
+                        "580%",
+                        "663%",
+                        "684%",
+                        "705%",
+                        "788%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_TARGET",
+                "Effects": [
+                    {
+                        "Type": "DMGSingle",
+                        "CriticalCheck": "Check",
+                        "Scale": [
+                            41477,
+                            43553,
+                            45629,
+                            53924,
+                            56000,
+                            58067,
+                            66362,
+                            68438,
+                            70514,
+                            78810
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "passive",
+                "Name": "机会难得，选红色！",
+                "Desc": "<b:CriticalDamage>增加<?1>.",
+                "Parameters": [
+                    [
+                        "14%",
+                        "14.7%",
+                        "15.4%",
+                        "18.2%",
+                        "18.9%",
+                        "19.6%",
+                        "22.4%",
+                        "23.1%",
+                        "23.8%",
+                        "26.6%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Stat": "CriticalDamageRate_Coefficient",
+                        "Scale": [
+                            1400,
+                            1470,
+                            1540,
+                            1820,
+                            1890,
+                            1960,
+                            2240,
+                            2310,
+                            2380,
+                            2660
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "weaponpassive",
+                "Name": "机会难得，选红色！＋",
+                "Desc": "<b:CriticalChance>增加<?1>；\n<b:CriticalDamage>增加<?2>.",
+                "Parameters": [
+                    [
+                        "100",
+                        "105",
+                        "110",
+                        "130",
+                        "135",
+                        "140",
+                        "160",
+                        "165",
+                        "170",
+                        "190"
+                    ],
+                    [
+                        "14%",
+                        "14.7%",
+                        "15.4%",
+                        "18.2%",
+                        "18.9%",
+                        "19.6%",
+                        "22.4%",
+                        "23.1%",
+                        "23.8%",
+                        "26.6%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Stat": "CriticalPoint_Base",
+                        "Scale": [
+                            100,
+                            105,
+                            110,
+                            130,
+                            135,
+                            140,
+                            160,
+                            165,
+                            170,
+                            190
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "sub",
+                "Name": "当心误射！",
+                "Desc": "自身使用EX技能时起<?1>期间，立即补充自身进行普通攻击时消耗的弹药.",
+                "Parameters": [
+                    [
+                        "2.5秒",
+                        "2.75秒",
+                        "3秒",
+                        "3.5秒",
+                        "3.75秒",
+                        "4秒",
+                        "4.5秒",
+                        "4.75秒",
+                        "5秒",
+                        "5.5秒"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_RELOAD",
+                "Effects": []
+            }
+        ],
+        "FavorStatType": [
+            "AttackPower",
+            "MaxHP"
+        ],
+        "FavorStatValue": [
+            [
+                2,
+                0
+            ],
+            [
+                3,
+                0
+            ],
+            [
+                4,
+                56
+            ],
+            [
+                5,
+                67
+            ],
+            [
+                1,
+                11
+            ],
+            [
+                2,
+                17
+            ],
+            [
+                3,
+                28
+            ]
+        ],
+        "FavorAlts": [
+            13011
+        ],
+        "MemoryLobby": [
+            2,
+            0,
+            0
+        ],
+        "MemoryLobbyBGM": "Theme 214",
+        "FurnitureInteraction": [
+            [
+                [
+                    210341,
+                    0
+                ],
+                [
+                    210341,
+                    1
+                ]
+            ],
+            [],
+            []
+        ],
+        "FavorItemTags": [
+            "aR",
+            "aK"
+        ],
+        "FavorItemUniqueTags": [
+            "Gb",
+            "GC"
+        ],
+        "IsLimited": 0,
+        "Weapon": {
+            "Name": "独一构想",
+            "Desc": "桃井使用的突击步枪。\n\n声称说是为了成为女仆，是需要枪械的，但她自己似乎并不明白为什么需要。",
+            "AdaptationType": "Outdoor",
+            "AdaptationValue": 1,
+            "AttackPower1": 93,
+            "AttackPower100": 928,
+            "MaxHP1": 640,
+            "MaxHP100": 6404,
+            "HealPower1": 0,
+            "HealPower100": 0,
+            "StatLevelUpType": "Standard"
+        },
+        "Gear": {},
+        "SkillExMaterial": [
+            [
+                3050,
+                280
+            ],
+            [
+                3051,
+                3050,
+                281,
+                170
+            ],
+            [
+                3052,
+                3051,
+                282,
+                171
+            ],
+            [
+                3053,
+                3052,
+                283,
+                172
+            ]
+        ],
+        "SkillExMaterialAmount": [
+            [
+                12,
+                14
+            ],
+            [
+                12,
+                18,
+                14,
+                32
+            ],
+            [
+                12,
+                18,
+                10,
+                27
+            ],
+            [
+                8,
+                18,
+                7,
+                18
+            ]
+        ],
+        "SkillMaterial": [
+            [
+                4050
+            ],
+            [
+                4050
+            ],
+            [
+                4051,
+                4050,
+                280
+            ],
+            [
+                4051,
+                281,
+                170
+            ],
+            [
+                4052,
+                4051,
+                281,
+                170
+            ],
+            [
+                4052,
+                282,
+                171
+            ],
+            [
+                4053,
+                4052,
+                283,
+                172
+            ],
+            [
+                4053,
+                283,
+                172
+            ]
+        ],
+        "SkillMaterialAmount": [
+            [
+                5
+            ],
+            [
+                8
+            ],
+            [
+                5,
+                12,
+                5
+            ],
+            [
+                8,
+                5,
+                12
+            ],
+            [
+                5,
+                12,
+                7,
+                18
+            ],
+            [
+                8,
+                3,
+                18
+            ],
+            [
+                8,
+                12,
+                5,
+                11
+            ],
+            [
+                12,
+                8,
+                13
+            ]
+        ]
+    },
+    {
+        "Id": 10095,
+        "IsReleased": [
+            true,
+            false,
+            false
+        ],
+        "DefaultOrder": 182,
+        "PathName": "Midori_Maid",
+        "DevName": "CH0202",
+        "Name": "绿（女仆）",
+        "School": "Millennium",
+        "Club": "GameDev",
+        "StarGrade": 3,
+        "SquadType": "Main",
+        "TacticRole": "DamageDealer",
+        "Summons": [],
+        "Position": "Back",
+        "BulletType": "Sonic",
+        "ArmorType": "LightArmor",
+        "StreetBattleAdaptation": 0,
+        "OutdoorBattleAdaptation": 4,
+        "IndoorBattleAdaptation": 2,
+        "WeaponType": "SR",
+        "WeaponImg": "weapon_icon_10016",
+        "Cover": true,
+        "Equipment": [
+            "Hat",
+            "Hairpin",
+            "Watch"
+        ],
+        "CollectionBG": "BG_OldHouseOutside_Collection",
+        "FamilyName": "才羽",
+        "PersonalName": "绿",
+        "SchoolYear": "1年级",
+        "CharacterAge": "15岁",
+        "Birthday": "12月8日",
+        "CharacterSSRNew": "如果需要的话我会成为完美的女仆。还请一直关注着我，主人。",
+        "ProfileIntroduction": "千年科学学园所属，冒充……成了C&C特工的「游戏开发部」插画师。\n\n她本人声称穿上了女仆装并非她本意，但对任务却又十分认真地执行。",
+        "Hobby": "绘画",
+        "CharacterVoice": "高田忧希",
+        "BirthDay": "12/8",
+        "Illustrator": "kokosando",
+        "Designer": "kokosando",
+        "CharHeightMetric": "143cm",
+        "CharHeightImperial": null,
+        "StabilityPoint": 1992,
+        "AttackPower1": 223,
+        "AttackPower100": 2237,
+        "MaxHP1": 2242,
+        "MaxHP100": 19440,
+        "DefensePower1": 19,
+        "DefensePower100": 119,
+        "HealPower1": 1404,
+        "HealPower100": 4213,
+        "DodgePoint": 199,
+        "AccuracyPoint": 902,
+        "CriticalPoint": 200,
+        "CriticalDamageRate": 20000,
+        "AmmoCount": 5,
+        "AmmoCost": 1,
+        "Range": 750,
+        "RegenCost": 700,
+        "Skills": [
+            {
+                "SkillType": "autoattack",
+                "Effects": [
+                    {
+                        "Type": "DMGSingle",
+                        "Hits": [
+                            10000
+                        ],
+                        "Scale": [
+                            10000
+                        ],
+                        "Frames": {
+                            "AttackEnterDuration": 0,
+                            "AttackStartDuration": 0,
+                            "AttackEndDuration": 0,
+                            "AttackBurstRoundOverDelay": 0,
+                            "AttackIngDuration": 0,
+                            "AttackReloadDuration": 0
+                        },
+                        "CriticalCheck": "Check"
+                    }
+                ]
+            },
+            {
+                "SkillType": "ex",
+                "Name": "虚拟女仆射击",
+                "Desc": "对1名敌方单位造成自身攻击力<?1>的伤害.",
+                "Parameters": [
+                    [
+                        "914%",
+                        "1052%",
+                        "1326%",
+                        "1464%",
+                        "1738%"
+                    ]
+                ],
+                "Cost": [
+                    5,
+                    5,
+                    5,
+                    5,
+                    5
+                ],
+                "Icon": "COMMON_SKILLICON_TARGET",
+                "Effects": [
+                    {
+                        "Type": "DMGSingle",
+                        "CriticalCheck": "Check",
+                        "Scale": [
+                            91499,
+                            105231,
+                            132677,
+                            146400,
+                            173855
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "normal",
+                "Name": "完美的清扫",
+                "Desc": "每30秒，令自身<b:ATK>增加<?1>(持续23秒).",
+                "Parameters": [
+                    [
+                        "24.8%",
+                        "25.8%",
+                        "26.9%",
+                        "31.8%",
+                        "33.1%",
+                        "34.3%",
+                        "40%",
+                        "41.4%",
+                        "42.9%",
+                        "49.3%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                2481,
+                                2586,
+                                2691,
+                                3187,
+                                3311,
+                                3435,
+                                4005,
+                                4148,
+                                4291,
+                                4935
+                            ]
+                        ],
+                        "Stat": "AttackPower_Coefficient",
+                        "Channel": 2
+                    }
+                ]
+            },
+            {
+                "SkillType": "passive",
+                "Name": "机会难得，选绿色",
+                "Desc": "<b:ATK>增加<?1>.",
+                "Parameters": [
+                    [
+                        "14%",
+                        "14.7%",
+                        "15.4%",
+                        "18.2%",
+                        "18.9%",
+                        "19.6%",
+                        "22.4%",
+                        "23.1%",
+                        "23.8%",
+                        "26.6%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Stat": "AttackPower_Coefficient",
+                        "Scale": [
+                            1400,
+                            1470,
+                            1540,
+                            1820,
+                            1890,
+                            1960,
+                            2240,
+                            2310,
+                            2380,
+                            2660
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "weaponpassive",
+                "Name": "机会难得，选绿色+",
+                "Desc": "<b:EnhanceSonicRate>加算<?1>；\n<b:ATK>增加<?2>.",
+                "Parameters": [
+                    [
+                        "26%",
+                        "27.3%",
+                        "28.6%",
+                        "33.8%",
+                        "35.1%",
+                        "36.4%",
+                        "41.6%",
+                        "42.9%",
+                        "44.2%",
+                        "49.4%"
+                    ],
+                    [
+                        "14%",
+                        "14.7%",
+                        "15.4%",
+                        "18.2%",
+                        "18.9%",
+                        "19.6%",
+                        "22.4%",
+                        "23.1%",
+                        "23.8%",
+                        "26.6%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Stat": "EnhanceSonicRate_Base",
+                        "Scale": [
+                            2600,
+                            2730,
+                            2860,
+                            3380,
+                            3510,
+                            3640,
+                            4160,
+                            4290,
+                            4420,
+                            4940
+                        ]
+                    }
+                ]
+            },
+            {
+                "SkillType": "sub",
+                "Name": "分数挑战",
+                "Desc": "自身使用EX技能时，立即令自身<b:CriticalChance>增加<?1>(持续10秒).",
+                "Parameters": [
+                    [
+                        "30.2%",
+                        "31.7%",
+                        "33.2%",
+                        "39.3%",
+                        "40.8%",
+                        "42.3%",
+                        "48.3%",
+                        "49.9%",
+                        "51.4%",
+                        "57.4%"
+                    ]
+                ],
+                "Icon": "COMMON_SKILLICON_WEAPONBUFF",
+                "Effects": [
+                    {
+                        "Type": "BuffSelf",
+                        "Value": [
+                            [
+                                3024,
+                                3176,
+                                3327,
+                                3932,
+                                4083,
+                                4234,
+                                4839,
+                                4990,
+                                5141,
+                                5746
+                            ]
+                        ],
+                        "Stat": "CriticalPoint_Coefficient",
+                        "Channel": 9
+                    }
+                ]
+            }
+        ],
+        "FavorStatType": [
+            "AttackPower",
+            "MaxHP"
+        ],
+        "FavorStatValue": [
+            [
+                2,
+                0
+            ],
+            [
+                3,
+                0
+            ],
+            [
+                4,
+                49
+            ],
+            [
+                5,
+                58
+            ],
+            [
+                1,
+                10
+            ],
+            [
+                2,
+                14
+            ],
+            [
+                3,
+                24
+            ]
+        ],
+        "FavorAlts": [
+            10016
+        ],
+        "MemoryLobby": [
+            5,
+            0,
+            0
+        ],
+        "MemoryLobbyBGM": "Theme 220",
+        "FurnitureInteraction": [
+            [
+                [
+                    210341,
+                    0
+                ],
+                [
+                    210341,
+                    1
+                ]
+            ],
+            [],
+            []
+        ],
+        "FavorItemTags": [
+            "am",
+            "aR"
+        ],
+        "FavorItemUniqueTags": [
+            "Gc",
+            "GD"
+        ],
+        "IsLimited": 0,
+        "Weapon": {
+            "Name": "新奇灵感",
+            "Desc": "绿使用的狙击步枪。\n\n她声称，为了成为完美的女仆，是需要枪械的。",
+            "AdaptationType": "Outdoor",
+            "AdaptationValue": 1,
+            "AttackPower1": 98,
+            "AttackPower100": 983,
+            "MaxHP1": 562,
+            "MaxHP100": 5621,
+            "HealPower1": 0,
+            "HealPower100": 0,
+            "StatLevelUpType": "Standard"
+        },
+        "Gear": {},
+        "SkillExMaterial": [
+            [
+                3050,
+                110
+            ],
+            [
+                3051,
+                3050,
+                111,
+                260
+            ],
+            [
+                3052,
+                3051,
+                112,
+                261
+            ],
+            [
+                3053,
+                3052,
+                113,
+                262
+            ]
+        ],
+        "SkillExMaterialAmount": [
+            [
+                12,
+                17
+            ],
+            [
+                12,
+                18,
+                12,
+                31
+            ],
+            [
+                12,
+                18,
+                10,
+                26
+            ],
+            [
+                8,
+                18,
+                8,
+                19
+            ]
+        ],
+        "SkillMaterial": [
+            [
+                4050
+            ],
+            [
+                4050
+            ],
+            [
+                4051,
+                4050,
+                110
+            ],
+            [
+                4051,
+                111,
+                260
+            ],
+            [
+                4052,
+                4051,
+                111,
+                260
+            ],
+            [
+                4052,
+                112,
+                261
+            ],
+            [
+                4053,
+                4052,
+                113,
+                262
+            ],
+            [
+                4053,
+                113,
+                262
+            ]
+        ],
+        "SkillMaterialAmount": [
+            [
+                5
+            ],
+            [
+                8
+            ],
+            [
+                5,
+                12,
+                7
+            ],
+            [
+                8,
+                6,
+                15
+            ],
+            [
+                5,
+                12,
+                10,
+                16
+            ],
+            [
+                8,
+                3,
+                19
+            ],
+            [
+                8,
+                12,
+                5,
+                10
+            ],
+            [
+                12,
+                8,
                 13
             ]
         ]

@@ -200,6 +200,7 @@ let statPreviewSelectedEnemyLevel = 1
 let statPreviewSelectedEnemyGrade = 1
 let statPreviewSelectedEnemyRaid = 0
 let statPreviewSelectedEnemyRaidDifficulty = 0
+let statPreviewSelectedEnemyRaidFloor = 0
 let statPreviewSelectedEnemyLevelFixed = false
 let statPreviewSelectedEnemyArmorType = null
 let statPreviewEnemyBookmarks = []
@@ -501,6 +502,30 @@ String.prototype.escapeHtml = function() {
     constructor(character, level, stargrade, transcendence=[], statGrowthType='Standard') {
         this.stats = {}
 
+        function getRawStat(stat) {
+            if (character[`Stat${region.Name}`] && character[`Stat${region.Name}`][stat] !== undefined) {
+                return character[`Stat${region.Name}`][stat]
+            } else if (character[stat] !== undefined) {
+                return character[stat]
+            } else {
+                //return default value
+                switch (stat) {
+                    case 'CriticalResistPoint': return 100
+                    case 'CriticalDamageResistRate': return 5000
+                    case 'StabilityRate': return 2000
+                    case 'DamageRatio': return 10000
+                    case 'DamagedRatio': return 10000
+                    case 'OppressionPower': return 100
+                    case 'OppressionResist': return 100
+                    case 'MoveSpeed': return 200
+                    case 'StreetBattleAdaptation': return 2
+                    case 'OutdoorBattleAdaptation': return 2
+                    case 'IndoorBattleAdaptation': return 2
+                    default: return 0
+                }
+            }
+        }
+
         if (transcendence.length == 0) {
             transcendence = [[0, 1000, 1200, 1400, 1700], [0, 500, 700, 900, 1400], [0, 750, 1000, 1200, 1500]]
         }
@@ -515,21 +540,21 @@ String.prototype.escapeHtml = function() {
             transcendenceHeal += transcendence[2][i] / 10000
         }
 
-        let MaxHP = CharacterStats.interpolateStat(character.MaxHP1, character.MaxHP100, level, transcendenceHP, statGrowthType)
-        let AttackPower = CharacterStats.interpolateStat(character.AttackPower1, character.AttackPower100, level, transcendenceAttack, statGrowthType)
-        let DefensePower = CharacterStats.interpolateStat(character.DefensePower1, character.DefensePower100, level, 1, statGrowthType)
-        let HealPower = CharacterStats.interpolateStat(character.HealPower1, character.HealPower100, level, transcendenceHeal, statGrowthType) 
+        let MaxHP = CharacterStats.interpolateStat(getRawStat('MaxHP1'), getRawStat('MaxHP100'), level, transcendenceHP, statGrowthType)
+        let AttackPower = CharacterStats.interpolateStat(getRawStat('AttackPower1'), getRawStat('AttackPower100'), level, transcendenceAttack, statGrowthType)
+        let DefensePower = CharacterStats.interpolateStat(getRawStat('DefensePower1'), getRawStat('DefensePower100'), level, 1, statGrowthType)
+        let HealPower = CharacterStats.interpolateStat(getRawStat('HealPower1'), getRawStat('HealPower100'), level, transcendenceHeal, statGrowthType) 
 
         let DefensePenetration = 0
-        if (character.DefensePenetration100 !== undefined) {
-            DefensePenetration = CharacterStats.interpolateStat(character.DefensePenetration1, character.DefensePenetration100, level, 1, statGrowthType)
+        if (getRawStat('DefensePenetration100') !== undefined) {
+            DefensePenetration = CharacterStats.interpolateStat(getRawStat('DefensePenetration1'), getRawStat('DefensePenetration100'), level, 1, statGrowthType)
         }
 
         this.level = level
         this.terrain = {
-            Street: character.StreetBattleAdaptation !== undefined ? character.StreetBattleAdaptation : 2,
-            Outdoor: character.OutdoorBattleAdaptation !== undefined ? character.OutdoorBattleAdaptation : 2,
-            Indoor: character.IndoorBattleAdaptation !== undefined ? character.IndoorBattleAdaptation : 2
+            Street: getRawStat('StreetBattleAdaptation'),
+            Outdoor: getRawStat('OutdoorBattleAdaptation'),
+            Indoor: getRawStat('IndoorBattleAdaptation')
         }
 
         this.activeBuffs = {}
@@ -541,27 +566,27 @@ String.prototype.escapeHtml = function() {
         this.stats['AttackPower'] = [AttackPower,0,1,0]
         this.stats['DefensePower'] = [DefensePower,0,1,0]
         this.stats['HealPower'] = [HealPower,0,1,0]
-        this.stats['AccuracyPoint'] = [character.AccuracyPoint,0,1,0]
-        this.stats['DodgePoint'] = [character.DodgePoint,0,1,0]
-        this.stats['CriticalPoint'] = [character.CriticalPoint,0,1,0]
-        this.stats['CriticalDamageRate'] = [character.CriticalDamageRate,0,1,0]
-        this.stats['CriticalChanceResistPoint'] = [character.CriticalResistPoint !== undefined ? character.CriticalResistPoint : 100,0,1,0]
-        this.stats['CriticalDamageResistRate'] = [character.CriticalDamageResistRate !== undefined ? character.CriticalDamageResistRate : 5000,0,1,0]
-        this.stats['StabilityPoint'] = [character.StabilityPoint,0,1,0]
-        this.stats['StabilityRate'] = [character.StabilityRate !== undefined ? character.StabilityRate : 2000, 0,1,0]
-        this.stats['AmmoCount'] = [character.AmmoCount,0,1,0]
-        this.stats['AmmoCost'] = [character.AmmoCost,0,1,0]
-        this.stats['Range'] = [character.Range,0,1,0]
-        this.stats['RegenCost'] = [character.RegenCost,0,1,0]
-        this.stats['DamageRatio'] = [character.DamageRatio !== undefined ? character.DamageRatio : 10000,0,1,0]
-        this.stats['DamagedRatio'] = [character.DamagedRatio !== undefined ? character.DamagedRatio : 10000,0,1,0]
+        this.stats['AccuracyPoint'] = [getRawStat('AccuracyPoint'),0,1,0]
+        this.stats['DodgePoint'] = [getRawStat('DodgePoint'),0,1,0]
+        this.stats['CriticalPoint'] = [getRawStat('CriticalPoint'),0,1,0]
+        this.stats['CriticalDamageRate'] = [getRawStat('CriticalDamageRate'),0,1,0]
+        this.stats['CriticalChanceResistPoint'] = [getRawStat('CriticalResistPoint'),0,1,0]
+        this.stats['CriticalDamageResistRate'] = [getRawStat('CriticalDamageResistRate'),0,1,0]
+        this.stats['StabilityPoint'] = [getRawStat('StabilityPoint'),0,1,0]
+        this.stats['StabilityRate'] = [getRawStat('StabilityRate'), 0,1,0]
+        this.stats['AmmoCount'] = [getRawStat('AmmoCount'),0,1,0]
+        this.stats['AmmoCost'] = [getRawStat('AmmoCost'),0,1,0]
+        this.stats['Range'] = [getRawStat('Range'),0,1,0]
+        this.stats['RegenCost'] = [getRawStat('RegenCost'),0,1,0]
+        this.stats['DamageRatio'] = [getRawStat('DamageRatio'),0,1,0]
+        this.stats['DamagedRatio'] = [getRawStat('DamagedRatio'),0,1,0]
         this.stats['HealEffectivenessRate'] = [10000,0,1,0]
-        this.stats['OppressionPower'] = [character.OppressionPower !== undefined ? character.OppressionPower : 100,0,1,0]
-        this.stats['OppressionResist'] = [character.OppressionResist !== undefined ? character.OppressionResist : 100,0,1,0]
+        this.stats['OppressionPower'] = [getRawStat('OppressionPower'),0,1,0]
+        this.stats['OppressionResist'] = [getRawStat('OppressionResist'),0,1,0]
         this.stats['AttackSpeed'] = [10000,0,1,0]
         this.stats['BlockRate'] = [0,0,1,0]
         this.stats['DefensePenetration'] = [DefensePenetration,0,1,0]
-        this.stats['MoveSpeed'] = [character.MoveSpeed ? character.MoveSpeed : 200,0,1,0]
+        this.stats['MoveSpeed'] = [getRawStat('MoveSpeed'),0,1,0]
         this.stats['EnhanceExplosionRate'] = [10000,0,1,0]
         this.stats['EnhancePierceRate'] = [10000,0,1,0]
         this.stats['EnhanceMysticRate'] = [10000,0,1,0]
@@ -2392,7 +2417,8 @@ class EnemyFinder {
 
         data.raids.TimeAttack.forEach(stage => {
             if (!stage.IsReleased[regionID]) return
-            stage.Formations.forEach((formation, formationId) => {
+            const formations = getServerProperty(stage, 'Formations')
+            formations.forEach((formation, formationId) => {
                 formation.EnemyList.forEach(enemyId => {
                     const enemy = find(data.enemies, 'Id', enemyId)[0]
                     if (enemy.SquadType == 'Main' && enemy.Rank != "Summoned" && statPreviewEnemyList.findIndex((e) => e.id == enemy.Id) == -1) {
@@ -2437,10 +2463,37 @@ class EnemyFinder {
             })
         })
 
+
+        data.raids.MultiFloorRaid.forEach(raid => {
+            raid.EnemyList.forEach((difficulty, difficultyId) => {
+                if (!raid.IsReleased[regionID] || difficultyId > raid.MaxDifficulty[regionID]) return
+                difficulty.forEach(enemyId => {
+                    const enemy = find(data.enemies, 'Id', enemyId)[0]
+                    if (enemy.SquadType == 'Main' && !enemy.IsNPC) {
+                        const raidIcon = (enemy.Icon !== undefined && enemy.Icon != "") ? `images/enemy/${enemy.Icon}.webp` : `images/raid/icon/Icon_${raid.PathName}.png`
+                        statPreviewEnemyList.push({
+                            id: enemy.Id,
+                            name: enemy.Name,
+                            searchTerms: [getTranslatedString(raid, 'Name')],
+                            source: 'multifloorraid',
+                            sourceName: `${getLocalizedString("StageType", "MultiFloorRaid")} (${getLocalizedString('ArmorType', raid.ArmorType)}) / ${raid.DifficultyStartFloor[difficultyId]} ~ ${raid.DifficultyStartFloor[difficultyId+1] - 1}`,
+                            rank: enemy.Rank,
+                            icon: raidIcon,
+                            level: -1,
+                            grade: 1,
+                            raidId: raid.Id,
+                            raidDifficulty: difficultyId
+                        })
+                    }
+                })
+            })
+        })
+
         data.stages.Event.forEach(stage => {
             if (stage.Difficulty != 2 || !region.Events.includes(stage.EventId)) return
             let stageType = stage.Field ? 'Field' : 'Event'
-            stage.Formations.forEach((formation) => {
+            const formations = getServerProperty(stage, 'Formations')
+            formations.forEach((formation) => {
                 formation.EnemyList.forEach(enemyId => {
                     const enemy = find(data.enemies, 'Id', enemyId)[0]
                     if (enemy.Id >= 8010000 && enemy.SquadType == 'Main') {
@@ -2468,7 +2521,8 @@ class EnemyFinder {
             conquestMap.Maps.filter(m => m.Difficulty == "VeryHard").forEach(challengeMap => {
                 challengeMap.Tiles.filter(t => t.Type == "Battle").forEach(tile => {
                     const stage = find(data.stages.Conquest, "Id", tile.StageId)[0]
-                    stage.Formations.forEach((formation) => {
+                    const formations = getServerProperty(stage, 'Formations')
+                    formations.forEach((formation) => {
                         formation.EnemyList.forEach(enemyId => {
                             const enemy = find(data.enemies, 'Id', enemyId)[0]
                             if (enemy.Id >= 8010000 && enemy.SquadType == 'Main') {
@@ -2494,7 +2548,7 @@ class EnemyFinder {
 
         data.stages.SchoolDungeon.forEach(stage => {
             if (stage.Stage > region.SchoolDungeonMax) return
-            const formation = stage.Formations[0]
+            const formation = getServerProperty(stage, 'Formations')[0]
             formation.EnemyList.forEach(enemyId => {
                 const enemy = find(data.enemies, 'Id', enemyId)[0]
                 if (enemy.SquadType == 'Main') {
@@ -2579,6 +2633,23 @@ class EnemyFinder {
         } else {
             $('#calculation-enemy-level').toggleClass('disabled', false)
             statPreviewSelectedEnemyLevelFixed = false
+        }
+
+        if (enemyListItem.source == 'multifloorraid') {
+            const raid = find(data.raids.MultiFloorRaid, 'Id', enemyListItem.raidId)[0]
+            $('#calculation-enemy-floor').show()
+            $('#calculation-enemy-floor input').val(0).attr('max', raid.DifficultyStartFloor[enemyListItem.raidDifficulty + 1] - raid.DifficultyStartFloor[enemyListItem.raidDifficulty] - 1).off('input').on('input', function (e) {
+                statPreviewSelectedEnemyRaidFloor = raid.DifficultyStartFloor[enemyListItem.raidDifficulty] - 1 + parseInt(this.value)
+                $('#calculation-enemy-floor .ba-slider-label').text(`${statPreviewSelectedEnemyRaidFloor + 1}`)
+                calculateEnemyStats()
+            })
+
+            statPreviewSelectedEnemyRaidFloor = raid.DifficultyStartFloor[enemyListItem.raidDifficulty] - 1
+            $('#calculation-enemy-floor .ba-slider-label').text(`${statPreviewSelectedEnemyRaidFloor + 1}`)
+
+            $('#calculation-enemy-level').toggleClass('disabled', true)
+        } else {
+            $('#calculation-enemy-floor').hide()
         }
 
         //set bookmark button
@@ -3626,6 +3697,10 @@ function loadModule(moduleName, entry=null) {
                 calculateEnemyStats()
             }).on('click', (e) => {e.currentTarget.select()})
             $('#calculation-enemy-level').toggleClass('disabled', statPreviewSelectedEnemyLevelFixed)
+
+            $('#calculation-enemy-floor input').on('change', function(e) {
+
+            })
 
             $('#skill-calculation-tab-student').on('click', calculateSkills)
             $('#skill-calculation-tab-enemy').on('click', calculateRaidSkills)
@@ -5513,7 +5588,7 @@ function initRaidSkillInfo(raidId, enemyId, raidDifficulty) {
     const skillInfoContainer = $('#calculation-enemy-skills').empty()
     raidSkillInfoCollection = []
 
-    if (raidId) {
+    if (raidId < 1000000) {
 
         const raid = find(raidId < 800000 ? data.raids.Raid : data.raids.WorldRaid, "Id", raidId)[0]
         const enemy = find(data.enemies, "Id", enemyId)[0]
@@ -5551,12 +5626,18 @@ function initRaidSkillInfo(raidId, enemyId, raidDifficulty) {
                 if (show) {
                     raidSkill.IsRaidSkill = true
                     raidSkill.RaidDifficulty = raidDifficulty
+
                     if (raidSkill.SkillType == "raidautoattack") {
                         raidSkill.RaidDifficulty = 0
                         raidSkill.Name = translateUI('skill_normalattack')
                         raidSkill.Desc = translateUI('skill_normalattack_target')
                         raidSkill.Parameters = [[`${parseInt(raidSkill.Effects[0].Scale[0][0] / 100)}%`]]
                     }
+
+                    if (!raidSkill.Name) {
+                        raidSkill.Name = translateUI(`student_skill_${raidSkill.SkillType.toLowerCase()}`)
+                    }
+
                     raidSkillInfoCollection.push(new SkillDamageInfo(raidSkill, skillInfoContainer, enemy))
                 }
             }
@@ -6007,7 +6088,7 @@ function loadRaid(raidId) {
             $('#ba-timeattack-terrain-img').attr('src', `images/ui/Terrain_${raid.Terrain}.png`)
             changeTimeAttackDifficulty(ta_difficulty)
         } else if (raidId < 1000000) {
-            //Multifloor
+            //World Raid
             $('#ba-raid-list-tab-worldraid').tab('show')
             $('#ba-raid-info').show()
             $('#ba-timeattack-info').hide()
@@ -6082,7 +6163,7 @@ function loadRaid(raidId) {
         
             $('#ba-raid-affiliation').text(getLocalizedString('StageType', 'MultiFloorRaid'))
             raidName = getTranslatedString(raid, 'Name')
-            $('#ba-raid-name').text(raidName)      
+            $('#ba-raid-name').html(raidName + ` <small>(${getLocalizedString('ArmorTypeLong', raid.ArmorType)})</small>`)      
             $('#ba-raid-terrain-img').attr('src', `images/ui/Terrain_${raid.Terrain[0]}.png`)
             if (raid.Terrain.length > 1) {
                 $('#ba-raid-terrain-alt-img').attr('src', `images/ui/Terrain_${raid.Terrain[1]}.png`)
@@ -6101,7 +6182,7 @@ function loadRaid(raidId) {
         loadedRaid = raid
         $('#raid-select-'+raid.Id).addClass('selected')
 
-        finalizeLoad(raidName, "raid", raid.Id, 'View Raid', raid.Id)
+        finalizeLoad(raidName+ ` (${getLocalizedString('ArmorTypeLong', raid.ArmorType)})`, "raid", raid.Id, 'View Raid', raid.Id)
 
         if (!raid.IsReleased[regionID]) {
             showReleaseWarning()
@@ -6694,7 +6775,7 @@ function loadStage(id) {
 
         $('#ba-stage-name').html(getStageName(stage, mode))
         $('#ba-stage-title').html(getStageTitle(stage, mode))
-        $('#ba-stage-level').text(translateUI('rec_level') + ' Lv.'+ stage.Level)
+        $('#ba-stage-level').text(translateUI('rec_level') + ' Lv.'+ getServerProperty(stage, 'Level'))
         $('#ba-stage-terrain-img').attr('src', `images/ui/Terrain_${stage.Terrain}.png`)
         $('#ba-stage-fog').toggle(mode == "Campaign" && stage.Difficulty == 1)
 
@@ -6918,7 +6999,7 @@ function loadStage(id) {
         let html = ''
         let enemyList = {}
         const enemyRanks = ['Minion','Elite','Champion','Boss']
-        const stageFormations = getVersionProperty(stage, "Formations", loadedStageVersion)
+        const stageFormations = getVersionServerProperty(stage, "Formations", loadedStageVersion)
         if (stageFormations.length) {
             $('#ba-stage-enemy-list, #ba-stage-enemy-info').show()
 
@@ -7050,6 +7131,15 @@ function getVersionProperty(obj, prop, version) {
         return obj.VersionData[version][prop]
     } else {
         return obj[prop]
+    }
+}
+
+function getVersionServerProperty(obj, prop, version) {
+    const serverSuffix = region.Name
+    if (obj.VersionData && version in obj.VersionData && prop in obj.VersionData[version]) {
+        return getSuffixedProperty(obj.VersionData[version], prop, serverSuffix)
+    } else {
+        return getSuffixedProperty(obj, prop, serverSuffix)
     }
 }
 
@@ -7311,7 +7401,7 @@ function toggleTSAStats() {
     $('#statpreview-tsastats-controls .ba-panel').toggleClass("disabled", !statPreviewTSAStats.enabled)
 
     if (statPreviewSelectedChar > 0) {
-        $('#student-stat-modal-skill-calculations .skill-info-tsa').toggle(statPreviewTSAStats.enabled)
+        $('#calculation-student-skills .skill-info-tsa').toggle(statPreviewTSAStats.enabled)
     }
 
     recalculateStats()
@@ -7325,8 +7415,8 @@ function changeExGearLevel(el, recalculate = true) {
     $('#ba-statpreview-gear4-level').text(statPreviewGearLevel > 0 ? `T${tier}` : translateUI('setting_off'))
 
     if (statPreviewSelectedChar == 0) {
-        $('#student-stat-modal-skill-calculations .skill-info-gearnormal').toggle(statPreviewGearLevel >= 2)
-        $('#student-stat-modal-skill-calculations .skill-info-normal').toggle(statPreviewGearLevel < 2)
+        $('#calculation-student-skills .skill-info-gearnormal').toggle(statPreviewGearLevel >= 2)
+        $('#calculation-student-skills .skill-info-normal').toggle(statPreviewGearLevel < 2)
     }
 
     updateGearIcon()
@@ -7620,8 +7710,7 @@ function recalculateStats() {
         let uniqueChannels = []
         statPreviewExternalBuffs.buffs.forEach((buff, index) => {
             buff.Skill.Effects.filter(e => statPreviewExternalBuffs.effectTypeFilter.includes(e.Type)).forEach((effect, effectIndex) => {
-                if (effect.Type == "BuffSelf" && buff.StudentId != student.Id) return
-
+                
                 //check conditions
                 const skillSlot = effect.OverrideSlot ? effect.OverrideSlot : buff.Skill.SkillType
 
@@ -7632,15 +7721,19 @@ function recalculateStats() {
 
                 let compatibleWithSummon = (statPreviewSelectedChar > 0) ? ExternalBuffs.checkRestrictions(summon, effect) : false
                 
+                if (effect.Type == "BuffSelf" && buff.StudentId != student.Id) {
+                    compatibleWithStudent = false
+                    compatibleWithSummon = false
+                }
+
                 if (!(compatibleWithStudent || compatibleWithSummon)) {
                     //exclude other character's Ex/Basic skills on Special characters
-                    $('#statpreview-buff-transferable-incompatible').toggle(statPreviewIncludeBuffs)
-                    $(`#statpreview-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('invalid', true)
+                    $(`#statpreview-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('incompatible', true)
                 } else {
                     if (uniqueChannels.find(e => e.slot == skillSlot && e.channel == effect.Channel)) {
                         //discount the buff if there is a channel conflict
                         $('#statpreview-buff-transferable-conflict').toggle(statPreviewIncludeBuffs)
-                        $(`#statpreview-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('invalid', true)
+                        $(`#statpreview-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('conflict', true)
                     } else {
                         const value = ExternalBuffs.getEffectValue(buff, effect)
 
@@ -7996,8 +8089,25 @@ function getSupportStats(support) {
 function calculateEnemyStats() {
 
     const enemy = find(data.enemies, "Id", statPreviewSelectedEnemyId)[0]
-    const enemyLevel = statPreviewSelectedEnemyLevel
-    const enemyStats = new CharacterStats(enemy, enemyLevel, statPreviewSelectedEnemyGrade, (enemy.Transcendence ? enemy.Transcendence : []))
+    let enemyLevel, enemyStats
+
+    if (statPreviewSelectedEnemyRaid >= 1000000) {
+        const raid = find(data.raids.MultiFloorRaid, 'Id', statPreviewSelectedEnemyRaid)[0]
+        enemyLevel = raid.RaidFloors[statPreviewSelectedEnemyRaidFloor].Level
+        enemyStats = new CharacterStats(enemy, enemyLevel, statPreviewSelectedEnemyGrade, (enemy.Transcendence ? enemy.Transcendence : []))
+        $('#calculation-enemy-level input').val(enemyLevel)
+
+        if (enemy.Id in raid.RaidFloors[statPreviewSelectedEnemyRaidFloor].StatChange) {
+            const statChange = raid.RaidFloors[statPreviewSelectedEnemyRaidFloor].StatChange[enemy.Id]
+            for (const stat in statChange) {
+                enemyStats.addBuff(stat, statChange[stat])
+            }
+        }
+
+    } else {
+        enemyLevel = statPreviewSelectedEnemyLevel
+        enemyStats = new CharacterStats(enemy, enemyLevel, statPreviewSelectedEnemyGrade, (enemy.Transcendence ? enemy.Transcendence : []))
+    }
 
     //include Enemy Debuffs
     $('#statpreview-enemy-buff-transferable-conflict').hide()
@@ -8010,7 +8120,7 @@ function calculateEnemyStats() {
             const skillSlot = effect.OverrideSlot ? effect.OverrideSlot : buff.Skill.SkillType
 
             if ((effect.RestrictTo && !effect.RestrictTo.includes(statPreviewSelectedEnemyId)) || effect.Type != "BuffTarget" || !ExternalBuffs.checkRestrictions(enemy, effect, {"ArmorType": statPreviewSelectedEnemyArmorType})) {
-                $(`#statpreview-enemy-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('invalid', true)
+                $(`#statpreview-enemy-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('incompatible', true)
             } else {
 
                 buffIncompatible = false
@@ -8018,7 +8128,7 @@ function calculateEnemyStats() {
                 if (uniqueChannels.find(e => e.slot == skillSlot && e.channel == effect.Channel)) {
                     //discount the buff if there is a channel conflict
                     $('#statpreview-enemy-buff-transferable-conflict').show()
-                    $(`#statpreview-enemy-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('invalid', true)
+                    $(`#statpreview-enemy-buff-transferable-controls div[data-index='${index}'] .buff-description span[data-effect='${effectIndex}']`).toggleClass('conflict', true)
                 } else {
                     const value = ExternalBuffs.getEffectValue(buff, effect) // ('StackSame' in effect ? effect.Value[0][buff.Level-1] * buff.Stacks : effect.Value[buff.Stacks-1][buff.Level-1])
                     enemyStats.addBuff(effect.Stat, value)
@@ -8626,6 +8736,10 @@ function getRaidCardHTML(raid, season=null, backgroundPath=null) {
     let name = getTranslatedString(raid, 'Name')
     const terrain = season ? season.Terrain : ''
 
+    if (raid.Id >= 1000000) {
+        name += ` (${getLocalizedString('ArmorTypeLong', raid.ArmorType)})`
+    }
+
     if (!backgroundPath) {
 
         if (raid.Id >= 1000000) {
@@ -8653,7 +8767,7 @@ function getRaidCardHTML(raid, season=null, backgroundPath=null) {
         html += `<div class="card-badge raid-terrain"><img class="invert-light" src="images/ui/Terrain_${terrain}.png"></div>`
     }
 
-    html += `<div class="card-label"><span class="label-text ${name.length > label_raid_smalltext_threshold[userLang] ? 'smalltext' : ''}">${getTranslatedString(raid, 'Name')}</span></div></div>`
+    html += `<div class="card-label"><span class="label-text ${name.length > label_raid_smalltext_threshold[userLang] ? 'smalltext' : ''}">${name}</span></div></div>`
     return html
 }
 
@@ -8712,7 +8826,7 @@ function showEnemyInfo(id, level, terrain, grade=1, scaletype=0, switchTab=false
 
     let enemyStats = new CharacterStats(enemy, level, grade, (enemy.Transcendence ? enemy.Transcendence : []), scaletype == 1 ? 'TimeAttack' : 'Standard')
 
-    //override je #8 HP values
+    //override joint exercise HP values
     if (loadedModule == 'raids') {
 
         if (raid.Id == 8000) {
@@ -8734,6 +8848,32 @@ function showEnemyInfo(id, level, terrain, grade=1, scaletype=0, switchTab=false
                 case 7810003:
                 case 7810004:
                     enemyStats.setBase('MaxHP', 250)
+                    break
+            }
+        }
+
+        if (raid.Id == 21000) {
+            switch (id) {
+                case 7832101:
+                case 7832102:
+                case 7832103:
+                case 7832104:
+                    enemyStats.setBase('DefensePower', 2000)
+                    enemyStats.setBase('DodgePoint', 1500)
+                    break
+                case 7832201:
+                case 7832202:
+                case 7832203:
+                case 7832204:
+                    enemyStats.setBase('DefensePower', 2000)
+                    enemyStats.setBase('DodgePoint', 1000)
+                    break
+                case 7832301:
+                case 7832302:
+                case 7832303:
+                case 7832304:
+                    enemyStats.setBase('DefensePower', 2000)
+                    enemyStats.setBase('DodgePoint', 500)
                     break
             }
         }
@@ -10546,7 +10686,7 @@ function allSearch() {
     if (results.length < maxResults)
     $.each(data.raids.MultiFloorRaid, function(i,el){
         if (el.IsReleased[regionID] && searchContains(searchTerm, getTranslatedString(el, 'Name'))) {
-            results.push({'name': getTranslatedString(el, 'Name'), 'icon': `images/raid/icon/Icon_${el.PathName}.png`, 'type': getLocalizedString('StageType', 'MultiFloorRaid'), 'rarity': '', 'rarity_text': '', 'onclick': `loadRaid(${el.Id})`})
+            results.push({'name': getTranslatedString(el, 'Name') + ` (${getLocalizedString('ArmorTypeLong', el.ArmorType)})`, 'icon': `images/raid/icon/Icon_${el.PathName}.png`, 'type': getLocalizedString('StageType', 'MultiFloorRaid'), 'rarity': '', 'rarity_text': '', 'onclick': `loadRaid(${el.Id})`})
             if (results.length >= maxResults) return false
         }
     })

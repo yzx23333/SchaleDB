@@ -11,7 +11,7 @@
             "NameKr": "은은함",
             "DescKr": "낮은 등급의 물질을 생성할 수 있습니다.",
             "NameTw": "隱約",
-            "DescTw": "可以生成低等級的物質。",
+            "DescTw": "可製造低等級的物質。",
             "NameTh": "เศษระยิบ",
             "DescTh": "สร้างไอเทมวัตถุดิบขั้นต่ำ",
             "NameCn": "隐然",
@@ -54,7 +54,7 @@
             "NameKr": "영롱함",
             "DescKr": "일반 등급의 물질을 생성할 수 있습니다.",
             "NameTw": "璀璨",
-            "DescTw": "可見建立一般等級的物質。",
+            "DescTw": "可製造一般等級的物質。",
             "NameTh": "เศษแวววาว",
             "DescTh": "สร้างไอเทมวัตถุดิบขั้นกลาง",
             "NameCn": "玲珑",
@@ -199,7 +199,7 @@
             "NameKr": "금속",
             "DescKr": "성장 재료를 생성할 수 있습니다.",
             "NameTw": "金屬",
-            "DescTw": "可製造成長資料。",
+            "DescTw": "可製造成長材料。",
             "NameTh": "โลหะ",
             "DescTh": "สร้างวัตถุดิบพัฒนา",
             "NameCn": "金属",
@@ -380,7 +380,7 @@
             "NameKr": "백금",
             "DescKr": "기술 노트를 생성할 수 있습니다.",
             "NameTw": "白金",
-            "DescTw": "可以生成技術筆記。",
+            "DescTw": "可製造技術筆記。",
             "NameTh": "แพลทินัม",
             "DescTh": "สร้างตำราสกิล",
             "NameCn": "白金",
@@ -458,7 +458,7 @@
             "NameKr": "무기 부품",
             "DescKr": "고유무기를 강화할 수 있는 무기 부품을 생성할 수 있습니다.",
             "NameTw": "武器零件",
-            "DescTw": "可以生成能夠強化固有武器的武器零件。",
+            "DescTw": "可製造能強化固有武器的武器零件。",
             "NameTh": "อะไหล่อาวุธ",
             "DescTh": "สร้างอะไหล่อาวุธสำหรับอัปเกรดอาวุธ",
             "NameCn": "武器部件",
@@ -856,7 +856,7 @@
             "NameKr": "게임개발부 세트",
             "DescKr": "카페 가구를 생성할 수 있습니다. (게임개발부 테마)",
             "NameTw": "遊戲開發部組合",
-            "DescTw": "可建立咖啡廳家具。(遊戲開發部主題)",
+            "DescTw": "可製造咖啡廳家具。(遊戲開發部主題)",
             "NameTh": "เซ็ตชมรมพัฒนาเกม",
             "DescTh": "สร้างเฟอร์นิเจอร์ในคาเฟ่ (ธีมชมรมพัฒนาเกม)",
             "NameCn": "游戏开发部系列",
@@ -903,16 +903,16 @@
             "Id": 160,
             "Tier": 1,
             "Quality": 2,
-            "NameEn": "Department Store Set",
-            "DescEn": "This can create cafe furniture. (Department Store theme)",
+            "NameEn": "Shopping Mall Set",
+            "DescEn": "This can create cafe furniture. (Shopping Mall theme)",
             "NameJp": "デパートシリーズ",
             "DescJp": "カフェの家具（デパートシリーズ）を生成することができます。",
             "NameKr": "쇼핑몰 세트",
             "DescKr": "카페 가구를 생성할 수 있습니다. (쇼핑몰 테마)",
-            "NameTw": "百貨商場系列",
-            "DescTw": "生成百貨商場系列的咖啡廳傢俱。",
-            "NameTh": "デパートシリーズ",
-            "DescTh": "カフェの家具（デパートシリーズ）を生成することができます。",
+            "NameTw": "購物中心組合",
+            "DescTw": "可製造咖啡廳家具。(購物中心主題)",
+            "NameTh": "เซ็ตช็อปปิ้งมอลล์",
+            "DescTh": "สร้างเฟอร์นิเจอร์ในคาเฟ่ (ธีมช็อปปิ้งมอลล์)",
             "NameCn": "百货商场系列",
             "DescCn": "生成百货商场系列的咖啡厅家具。",
             "NameZh": "百货商场系列",
@@ -991,7 +991,7 @@
             "NameKr": "영롱함",
             "DescKr": "일반 등급의 물질을 생성할 수 있습니다.",
             "NameTw": "璀璨",
-            "DescTw": "可見建立一般等級的物質。",
+            "DescTw": "可製造一般等級的物質。",
             "NameTh": "เศษแวววาว",
             "DescTh": "สร้างไอเทมวัตถุดิบขั้นกลาง",
             "NameCn": "玲珑",
@@ -1136,7 +1136,7 @@
             "NameKr": "금속",
             "DescKr": "성장 재료를 생성할 수 있습니다.",
             "NameTw": "金屬",
-            "DescTw": "可製造成長資料。",
+            "DescTw": "可製造成長材料。",
             "NameTh": "โลหะ",
             "DescTh": "สร้างวัตถุดิบพัฒนา",
             "NameCn": "金属",
@@ -1289,7 +1289,7 @@
             "NameKr": "백금",
             "DescKr": "기술 노트를 생성할 수 있습니다.",
             "NameTw": "白金",
-            "DescTw": "可以生成技術筆記。",
+            "DescTw": "可製造技術筆記。",
             "NameTh": "แพลทินัม",
             "DescTh": "สร้างตำราสกิล",
             "NameCn": "白金",
@@ -1359,7 +1359,7 @@
             "NameKr": "무기 부품",
             "DescKr": "고유무기를 강화할 수 있는 무기 부품을 생성할 수 있습니다.",
             "NameTw": "武器零件",
-            "DescTw": "可以生成能夠強化固有武器的武器零件。",
+            "DescTw": "可製造能強化固有武器的武器零件。",
             "NameTh": "อะไหล่อาวุธ",
             "DescTh": "สร้างอะไหล่อาวุธสำหรับอัปเกรดอาวุธ",
             "NameCn": "武器部件",
@@ -1753,7 +1753,7 @@
             "NameKr": "게임개발부 세트",
             "DescKr": "카페 가구를 생성할 수 있습니다. (게임개발부 테마)",
             "NameTw": "遊戲開發部組合",
-            "DescTw": "可建立咖啡廳家具。(遊戲開發部主題)",
+            "DescTw": "可製造咖啡廳家具。(遊戲開發部主題)",
             "NameTh": "เซ็ตชมรมพัฒนาเกม",
             "DescTh": "สร้างเฟอร์นิเจอร์ในคาเฟ่ (ธีมชมรมพัฒนาเกม)",
             "NameCn": "游戏开发部系列",
@@ -1800,16 +1800,16 @@
             "Id": 161,
             "Tier": 2,
             "Quality": 2,
-            "NameEn": "Department Store Set",
-            "DescEn": "This can create cafe furniture. (Department Store theme)",
+            "NameEn": "Shopping Mall Set",
+            "DescEn": "This can create cafe furniture. (Shopping Mall theme)",
             "NameJp": "デパートシリーズ",
             "DescJp": "カフェの家具（デパートシリーズ）を生成することができます。",
             "NameKr": "쇼핑몰 세트",
             "DescKr": "카페 가구를 생성할 수 있습니다. (쇼핑몰 테마)",
-            "NameTw": "百貨商場系列",
-            "DescTw": "生成百貨商場系列的咖啡廳傢俱。",
-            "NameTh": "デパートシリーズ",
-            "DescTh": "カフェの家具（デパートシリーズ）を生成することができます。",
+            "NameTw": "購物中心組合",
+            "DescTw": "可製造咖啡廳家具。(購物中心主題)",
+            "NameTh": "เซ็ตช็อปปิ้งมอลล์",
+            "DescTh": "สร้างเฟอร์นิเจอร์ในคาเฟ่ (ธีมช็อปปิ้งมอลล์)",
             "NameCn": "百货商场系列",
             "DescCn": "生成百货商场系列的咖啡厅家具。",
             "NameZh": "百货商场系列",
@@ -3470,7 +3470,7 @@
             "NameTh": "อาเรียส",
             "DescTh": "สร้างไอเทมสำหรับนักเรียนอาเรียส มีโอกาสเล็กน้อยที่จะสร้างเอลเลฟของนักเรียนอาเรียสได้",
             "NameCn": "阿里乌斯",
-            "DescCn": "可以生成对阿里乌斯学员们有用的物品。有极小机率可以生成阿里乌斯学员的神名文字。",
+            "DescCn": "可以生成对阿里乌斯学员们有用的物品。",
             "NameZh": "阿里乌斯",
             "DescZh": "生成对阿里乌斯学生有用的物品。\n低概率生成阿里乌斯学生的神名文字。",
             "Weight": 34444,
@@ -8947,6 +8947,54 @@
                 "AmountMin": 1,
                 "AmountMax": 1,
                 "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210339,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210321,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210322,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210323,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210324,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210342,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 1
             }
         ],
         "160": [
@@ -12317,6 +12365,54 @@
                 "AmountMin": 1,
                 "AmountMax": 2,
                 "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210339,
+                "AmountMin": 1,
+                "AmountMax": 2,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210321,
+                "AmountMin": 1,
+                "AmountMax": 2,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210322,
+                "AmountMin": 1,
+                "AmountMax": 2,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210323,
+                "AmountMin": 1,
+                "AmountMax": 2,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210324,
+                "AmountMin": 1,
+                "AmountMax": 2,
+                "Weight": 1
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210342,
+                "AmountMin": 1,
+                "AmountMax": 2,
+                "Weight": 1
             }
         ],
         "362": [
@@ -13339,6 +13435,14 @@
                 "AmountMin": 3,
                 "AmountMax": 5,
                 "Weight": 1
+            },
+            {
+                "Type": "Item",
+                "Rarity": "SSR",
+                "ItemId": 10081,
+                "AmountMin": 3,
+                "AmountMax": 5,
+                "Weight": 1
             }
         ],
         "371": [
@@ -14309,6 +14413,14 @@
                 "AmountMin": 1,
                 "AmountMax": 5,
                 "Weight": 1
+            },
+            {
+                "Type": "Item",
+                "Rarity": "SSR",
+                "ItemId": 10081,
+                "AmountMin": 1,
+                "AmountMax": 5,
+                "Weight": 1
             }
         ],
         "380": [
@@ -15188,6 +15300,14 @@
                 "Type": "Item",
                 "Rarity": "SSR",
                 "ItemId": 20029,
+                "AmountMin": 1,
+                "AmountMax": 5,
+                "Weight": 1
+            },
+            {
+                "Type": "Item",
+                "Rarity": "SSR",
+                "ItemId": 10081,
                 "AmountMin": 1,
                 "AmountMax": 5,
                 "Weight": 1
@@ -18799,6 +18919,30 @@
                 "AmountMin": 1,
                 "AmountMax": 1,
                 "Weight": 15
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210339,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 15
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210322,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 15
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210342,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 15
             }
         ],
         "2006": [
@@ -19345,6 +19489,30 @@
                 "AmountMin": 1,
                 "AmountMax": 1,
                 "Weight": 90
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210321,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 15
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210323,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 15
+            },
+            {
+                "Type": "Furniture",
+                "Rarity": "SSR",
+                "ItemId": 210324,
+                "AmountMin": 1,
+                "AmountMax": 1,
+                "Weight": 15
             }
         ],
         "2007": [

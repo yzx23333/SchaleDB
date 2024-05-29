@@ -99,7 +99,7 @@
             ]
         }
     ],
-    "build": 1714002586,
+    "build": 1716893949,
     "Regions": [
         {
             "Name": "Jp",
@@ -172,7 +172,9 @@
                 10817,
                 10818,
                 10819,
-                10820
+                10820,
+                10826,
+                10825
             ],
             "Event701Max": [
                 12,
@@ -188,22 +190,32 @@
             "CurrentGacha": [
                 {
                     "characters": [
-                        10091,
-                        10092,
-                        20008
+                        10094,
+                        10095,
+                        10066,
+                        10067
                     ],
-                    "start": 1713924000,
-                    "end": 1715133600
+                    "start": 1716343200,
+                    "end": 1717552800
                 }
             ],
             "CurrentEvents": [
                 {
-                    "event": 836,
-                    "start": 1713924000,
-                    "end": 1715133600
+                    "event": 10825,
+                    "start": 1716343200,
+                    "end": 1717552800
                 }
             ],
-            "CurrentRaid": []
+            "CurrentRaid": [
+                {
+                    "type": "Raid",
+                    "raid": 8,
+                    "terrain": "Indoor",
+                    "season": 70,
+                    "start": 1716948000,
+                    "end": 1717527600
+                }
+            ]
         },
         {
             "Name": "Global",
@@ -252,6 +264,7 @@
                 828,
                 829,
                 830,
+                831,
                 10801,
                 10802,
                 10803,
@@ -273,46 +286,35 @@
             "Event701Max": [
                 12,
                 10,
-                4
+                6
             ],
             "ChaserMax": 9,
             "BloodMax": 13,
             "FindGiftMax": 13,
             "SchoolDungeonMax": 4,
-            "FurnitureSetMax": 112,
-            "FurnitureTemplateMax": 13,
+            "FurnitureSetMax": 113,
+            "FurnitureTemplateMax": 14,
             "CurrentGacha": [
                 {
                     "characters": [
-                        10055,
-                        10060,
-                        10035,
-                        10036
+                        10082,
+                        10083
                     ],
-                    "start": 1713837600,
-                    "end": 1714442400
+                    "start": 1716861600,
+                    "end": 1718071200
                 }
             ],
             "CurrentEvents": [],
-            "CurrentRaid": [
-                {
-                    "type": "EliminateRaid",
-                    "raid": 5,
-                    "terrain": "Outdoor",
-                    "season": 6,
-                    "start": 1713837600,
-                    "end": 1714417200
-                }
-            ]
+            "CurrentRaid": []
         },
         {
             "Name": "Cn",
-            "StudentMaxLevel": 78,
+            "StudentMaxLevel": 80,
             "WeaponMaxLevel": 50,
             "BondMaxLevel": 50,
             "EquipmentMaxLevel": [
-                6,
-                6,
+                7,
+                7,
                 6
             ],
             "GearUnlock": false,
@@ -321,7 +323,7 @@
                 25
             ],
             "PotentialMax": 0,
-            "CampaignMax": 18,
+            "CampaignMax": 19,
             "CampaignExtra": false,
             "Events": [
                 701,
@@ -341,41 +343,43 @@
                 10802
             ],
             "Event701Max": [
-                2,
-                8,
+                4,
+                10,
                 0
             ],
             "ChaserMax": 9,
-            "BloodMax": 10,
-            "FindGiftMax": 10,
+            "BloodMax": 11,
+            "FindGiftMax": 11,
             "SchoolDungeonMax": 3,
             "FurnitureSetMax": 107,
             "FurnitureTemplateMax": 0,
             "CurrentGacha": [
                 {
                     "characters": [
-                        20015,
-                        20016,
-                        10040,
-                        10006
+                        10041,
+                        20017,
+                        10042,
+                        10048
                     ],
-                    "start": 1713420000,
-                    "end": 1714629600
+                    "start": 1715839200,
+                    "end": 1717048800
                 }
             ],
-            "CurrentEvents": [
-                {
-                    "event": 813,
-                    "start": 1713420000,
-                    "end": 1714629600
-                }
-            ],
+            "CurrentEvents": [],
             "CurrentRaid": [
                 {
                     "type": "TimeAttack",
-                    "raid": 2000,
-                    "start": 1714024800,
-                    "end": 1714593600
+                    "raid": 3000,
+                    "start": 1716444000,
+                    "end": 1717012800
+                },
+                {
+                    "type": "Raid",
+                    "raid": 1,
+                    "terrain": "Outdoor",
+                    "season": 24,
+                    "start": 1717048800,
+                    "end": 1717617600
                 }
             ]
         }
@@ -386,6 +390,12 @@
         "ew"
     ],
     "Changelog": [
+        {
+            "date": "2024/05/09",
+            "contents": [
+                "<h5>Schale DB Beta launched</h5><p>A beta channel has been launched containing a preview of an upcoming major site overhaul. Please note many features are still missing, incomplete or broken as it is still under active development. It can be accessed at <a target=\"_blank\" href=\"https://beta.schaledb.com\">beta.schaledb.com</a> and a link has been added on the home page.</p>"
+            ]
+        },
         {
             "date": "2024/03/29",
             "contents": [
@@ -439,12 +449,6 @@
             "contents": [
                 "<h6>CN Server Mode</h6>",
                 "<ul><li>Added a CN server mode that will use the maximum level, drop rates and visible content on the CN server.</li><li>(Please note that currently, the \"Current Events\" section and Raid season information will not be available for the CN server mode. Translations and names may differ from those found in the official Chinese release.)</li></ul>"
-            ]
-        },
-        {
-            "date": "2023/09/07",
-            "contents": [
-                "<ul><li>Added option to sort student list by Normal Attack and Basic Skill number of hits.</li><li>Added enemy skill calculations for Shiroko Terror.</li></ul>"
             ]
         }
     ],
